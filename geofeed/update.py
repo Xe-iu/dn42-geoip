@@ -7,6 +7,8 @@ geofeeds = finder.find_and_clean_geofeed()
 for fname, data in geofeeds.items():
     source = data["source"]
     csv_content = data["filtered_csv"]
+    master_cidr = data.get("master_cidr")
+    master_country_code = data.get("master_country_code")  # 从 finder.py 提取
 
     netip = fname.split("_")[0]
     netip = ipaddress.ip_address(netip)
@@ -22,6 +24,32 @@ for fname, data in geofeeds.items():
     with open(outpath, "w", encoding="utf-8", newline='\n') as f:
         f.write("# Automatically generated from Geofeed, DO NOT EDIT\n\n")
 
+    # ---- 写入 master_cidr ----
+    if master_cidr:
+        country_code = master_country_code or ""
+        country_name = geolib.country_map.get(country_code.lower(), "") if country_code else ""
+        lat = lon = 0.0
+
+        # 获取首都坐标
+        if country_code:
+            lat, lon, _ = geolib.get_location("", "", country_code)
+
+        outinfo = f"[{master_cidr}]"
+        if country_name:
+            outinfo += f'\ncountry="{country_name}"'
+        if country_code:
+            outinfo += f'\ncountry_code="{country_code}"'
+        if lat != 0 or lon != 0:
+            outinfo += f"\nlatitude={lat}"
+            outinfo += f"\nlongitude={lon}"
+            outinfo += "\naccuracy_radius=200"
+        if source:
+            outinfo += f'\nsource="{source}"'
+
+        with open(outpath, "a", encoding="utf-8", newline='\n') as f:
+            f.write(outinfo + "\n\n")
+
+    # ---- 写入其它网段 ----
     for row in csv_content:
         if not row or row[0].startswith("#"):
             continue
@@ -65,20 +93,20 @@ for fname, data in geofeeds.items():
         
         outinfo = f"[{prefix}]"
         if country_name != "":
-            outinfo += f"\ncountry={country_name}"
+            outinfo += f'\ncountry="{country_name}"'
         if country_code != "":
-            outinfo += f"\ncountry_code={country_code}"
+            outinfo += f'\ncountry_code="{country_code}"'
         if region_name != "":
-            outinfo += f"\nregion={region_name}"
+            outinfo += f'\nregion="{region_name}"'
         if region_code != "":
-            outinfo += f"\nregion_code={region_code}"
+            outinfo += f'\nregion_code="{region_code}"'
         if city != "":
-            outinfo += f"\ncity={city}"
+            outinfo += f'\ncity="{city}"'
         if lat != 0 or lon != 0:
             outinfo += f"\nlatitude={lat}"
             outinfo += f"\nlongitude={lon}"
             outinfo += "\naccuracy_radius=200"
-        outinfo += f"\nsource={source}"
 
+        # 其它网段不写 source
         with open(outpath, "a", encoding="utf-8", newline='\n') as f:
             f.write(outinfo + "\n\n")
