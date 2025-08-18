@@ -1,2 +1,10 @@
 # Automatically generated from Geofeed, DO NOT EDIT
 
+[172.20.21.128/27]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=200
+source="DN42"
+
