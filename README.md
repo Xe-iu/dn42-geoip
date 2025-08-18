@@ -21,6 +21,7 @@
 | latitude | 纬度 | 必填 | 精确到所填写的最小的行政区即可 |
 | longitude | 经度 | 必填 | 精确到所填写的最小的行政区即可 |
 | accuracy_radius | 经纬度精确半径 | 必填 | 随便填啦，不要太离谱即可 |
+| source | 网段注册源 | 必填 | 该网段是在哪里注册的，可填DN42、NeoNetwork、ICVPN、ChaosVPN、CRXN，或其它与DN42互联的网络，可见 https://dn42.eu/internal/Interconnections |
 
 **示例：**
 
