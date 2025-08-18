@@ -18,7 +18,9 @@ jobs:
 
       - name: Install Perl modules
         run: |
-          cpanm --notest Text::CSV MaxMind::DB::Writer::Tree
+          sudo apt-get update
+          sudo apt-get install -y libtext-csv-perl libmaxmind-db-writer-perl
+
 
       - name: Run build_mmdb.pl
         run: perl build_mmdb.pl
