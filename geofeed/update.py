@@ -27,6 +27,13 @@ for fname, data in geofeeds.items():
             continue
         
         prefix, country_code, region, city, *_ = row
+
+        if "/" not in prefix:
+            if netip.version == 4:
+                prefix = f"{prefix}/32"
+            else:
+                prefix = f"{prefix}/128"
+
         region_code = region.strip()
         try:
             region_code = region.split("-")[1].strip()
