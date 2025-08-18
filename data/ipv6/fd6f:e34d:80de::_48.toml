@@ -1,0 +1,54 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[fd6f:e34d:80de::/64]
+country=New Zealand
+country_code=NZ
+region=Auckland
+region_code=AUK
+city=Auckland
+latitude=-36.85582
+longitude=174.74304
+accuracy_radius=200
+source=DN42
+
+[fd6f:e34d:80de:1::/64]
+country=Australia
+country_code=AU
+region=New South Wales
+region_code=NSW
+city=Alexandria
+latitude=-19.05709
+longitude=136.70682
+accuracy_radius=200
+source=DN42
+
+[fd6f:e34d:80de:3::/64]
+country=New Zealand
+country_code=NZ
+region=Auckland
+region_code=AUK
+city=Auckland
+latitude=-36.85582
+longitude=174.74304
+accuracy_radius=200
+source=DN42
+
+[fd6f:e34d:80de:4::/64]
+country=United Kingdom
+country_code=GB
+latitude=51.50853
+longitude=-0.12574
+accuracy_radius=200
+source=DN42
+
+[fd6f:e34d:80de:5::/64]
+country=New Zealand
+country_code=NZ
+region=Auckland
+region_code=AUK
+city=Auckland
+latitude=-36.85582
+longitude=174.74304
+accuracy_radius=200
+source=DN42
+
