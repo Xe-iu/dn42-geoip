@@ -1,0 +1,32 @@
+name: Build GeoLite2-DN42 mmdb
+
+on:
+  workflow_dispatch:    
+  schedule:
+    - cron: '0 2 * * *' # 凌晨 2 点
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install Perl
+        run: sudo apt-get update && sudo apt-get install -y perl cpanminus unzip
+
+      - name: Install Perl modules
+        run: |
+          cpanm --notest Text::CSV MaxMind::DB::Writer::Tree
+
+      - name: Run build_mmdb.pl
+        run: perl build_mmdb.pl
+
+      - name: Commit mmdb to repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dn42-geoip/GeoLite2-City-DN42-test.mmdb
+          git commit -m "Auto update mmdb [skip ci]" || echo "No changes"
+          git push
