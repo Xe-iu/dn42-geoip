@@ -1,0 +1,40 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.21.85.64/29]
+country=New Zealand
+country_code=NZ
+region=Auckland
+region_code=AUK
+city=Auckland
+latitude=-36.85582
+longitude=174.74304
+accuracy_radius=200
+source=DN42
+
+[172.21.85.72/29]
+country=Australia
+country_code=AU
+region=New South Wales
+region_code=NSW
+city=Alexandria
+latitude=-19.05709
+longitude=136.70682
+accuracy_radius=200
+source=DN42
+
+[172.21.85.80/29]
+country=Switzerland
+country_code=CH
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=200
+source=DN42
+
+[172.21.85.88/29]
+country=Switzerland
+country_code=CH
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=200
+source=DN42
+

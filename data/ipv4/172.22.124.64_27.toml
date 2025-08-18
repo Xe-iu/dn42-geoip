@@ -1,0 +1,13 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.22.124.64/30]
+country=United States
+country_code=US
+region=California
+region_code=CA
+city=Rocklin
+latitude=38.79073
+longitude=-121.23578
+accuracy_radius=200
+source=DN42
+

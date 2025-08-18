@@ -1,0 +1,4 @@
+allCountries.txt
+*.pkl
+registry
+__pycache__
