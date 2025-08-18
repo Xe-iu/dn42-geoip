@@ -22,6 +22,14 @@ longitude=136.70682
 accuracy_radius=200
 source=DN42
 
+[fd6f:e34d:80de:2::/64]
+country=Switzerland
+country_code=CH
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=200
+source=DN42
+
 [fd6f:e34d:80de:3::/64]
 country=New Zealand
 country_code=NZ

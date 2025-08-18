@@ -1,5 +1,13 @@
 # Automatically generated from Geofeed, DO NOT EDIT
 
+[fdec:4f96:8be1::/64]
+country=China
+country_code=CN
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=200
+source=DN42
+
 [fdec:4f96:8be1:abcd::/64]
 country=Hong Kong
 country_code=HK
@@ -14,6 +22,14 @@ country_code=CN
 region=Beijing
 region_code=BJ
 city=Beijing
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=200
+source=DN42
+
+[fdec:4f96:8be1:101::/64]
+country=China
+country_code=CN
 latitude=39.9075
 longitude=116.39723
 accuracy_radius=200

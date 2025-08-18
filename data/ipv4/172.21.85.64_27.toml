@@ -22,3 +22,19 @@ longitude=136.70682
 accuracy_radius=200
 source=DN42
 
+[172.21.85.80/29]
+country=Switzerland
+country_code=CH
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=200
+source=DN42
+
+[172.21.85.88/29]
+country=Switzerland
+country_code=CH
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=200
+source=DN42
+
