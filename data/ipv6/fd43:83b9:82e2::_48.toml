@@ -1,0 +1,55 @@
+[fd43:83b9:82e2::/48]
+country =      "China"
+country_code = "CN"
+latitude =      39.906217
+longitude =     116.3912757
+accuracy_radius=200
+source =       "DN42"
+
+[fd43:83b9:82e2:face::/64]
+country =      "Japan"
+country_code = "JP"
+region =       "Tokyo"
+region_code =  "13"
+city =         "Tokyo"
+latitude =      35.6937632
+longitude =     139.7036319
+accuracy_radius=200
+
+[fd43:83b9:82e2:1344::/64]
+country =      "Hong Kong"
+country_code = "HK"
+latitude =      22.396428
+longitude =     114.109497
+accuracy_radius=200
+
+[fd43:83b9:82e2:1250::/64]
+country =      "France"
+country_code = "FR"
+region =       "Hauts-de-France"
+region_code =  "HDF"
+city =         "Roubaix"
+latitude =      50.6913
+longitude =     3.16852
+accuracy_radius=200
+
+[fd43:83b9:82e2:1840::/64]
+country =      "United States"
+country_code = "US"
+region =       "Missouri"
+region_code =  "MO"
+city =         "Kansas City"
+latitude =      -94.5784
+longitude =     39.10146
+accuracy_radius=200
+
+[fd43:83b9:82e2:eeee::/64]
+country =      "China"
+country_code = "CN"
+region =       "Guangdong"
+region_code =  "GD"
+city =         "Huizhou"
+latitude =      23.111944
+longitude =     114.416111
+accuracy_radius=200
+
