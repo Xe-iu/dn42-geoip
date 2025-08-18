@@ -6,7 +6,7 @@
 
 **国家或地区、一级行政区的名称和ISO编码，城市名称表格：[city.csv](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/city.csv)**
 
-**本仓库每天会构建新的mmdb文件到releases**
+**本仓库每天凌晨俩点（2:00 ，UTC时区）会构建新的mmdb文件到releases**
 
  **数据结构：**
  
@@ -17,7 +17,7 @@
 | country_code | 国家或地区的ISO编码 | 必填 |
 | region | 一级行政区 | 选填 |
 | region_code | 一级行政区的ISO编码 | 选填 | 如果region已填写则该字段为必填 |
-| city | 城市（一般为二级行政区） | 选填 | 如果该已填写则region字段为必填 |
+| city | 城市（一般为二级行政区） | 选填 | 如果该项已填写则region字段为必填，除非没有 |
 | latitude | 纬度 | 必填 | 精确到所填写的最小的行政区即可 |
 | longitude | 经度 | 必填 | 精确到所填写的最小的行政区即可 |
 | accuracy_radius | 经纬度精确半径 | 必填 | 随便填啦，不要太离谱即可 |
