@@ -1,0 +1,36 @@
+name: Build GeoLite2-DN42 mmdb
+
+on:
+  workflow_dispatch:    
+  schedule:
+    - cron: '0 2 * * *' # 凌晨 2 点
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install Perl
+        run: sudo apt-get update && sudo apt-get install -y perl cpanminus unzip
+
+      - name: Install Perl modules
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libtext-csv-perl libmaxmind-db-writer-perl
+
+
+      - name: Run build_mmdb.pl
+        run: perl build_mmdb.pl
+
+      - name: Upload GeoLite2-City-DN42
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: Build
+          name: "GeoLite2-City-DN42"
+          body: "每天凌晨两点自动更新上传GeoLite2-City-DN42"
+          files: GeoLite2-City-DN42.mmdb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
