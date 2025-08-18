@@ -334,8 +334,8 @@ foreach my $version (qw(IPv4 IPv6)) {
 }
 
 # 写入数据库
-open my $out_fh, '>:raw', 'GeoLite2-City-DN42-test.mmdb';
+open my $out_fh, '>:raw', 'GeoLite2-City-DN42.mmdb';
 $tree->write_tree($out_fh);
 close $out_fh;
 
-print "Database created successfully: GeoLite2-DN42-test.mmdb\n";
+print "Database created successfully: GeoLite2-DN42.mmdb\n";
