@@ -1,0 +1,25 @@
+[fd10:127:face::/48]
+country =      "China"
+country_code = "CN"
+latitude =      39.906217
+longitude =     116.3912757
+accuracy_radius=200
+source =       "NeoNetwork"
+
+[fd10:127:face::1/128]
+country =      "Singapore"
+country_code = "SG"
+city =         "Singapore"
+latitude =      1.3147
+longitude =     103.8454
+accuracy_radius=147
+
+[fd10:127:face::cc:37c9:a7f/128]
+country =      "China"
+country_code = "CN"
+region =       "Henan"
+region_code =  "HA"
+city =         "Zhengzhou"
+latitude =      34.8049096
+longitude =     113.300109
+accuracy_radius=170
