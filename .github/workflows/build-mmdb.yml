@@ -25,10 +25,12 @@ jobs:
       - name: Run build_mmdb.pl
         run: perl build_mmdb.pl
 
-      - name: Commit mmdb to repo
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add GeoLite2-City-DN42.mmdb
-          git commit -m "Auto update mmdb [skip ci]" || echo "No changes"
-          git push
+      - name: Upload GeoLite2-City-DN42
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: Build
+          name: "GeoLite2-City-DN42"
+          body: "每天凌晨两点自动更新上传GeoLite2-City-DN42"
+          files: GeoLite2-City-DN42.mmdb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
