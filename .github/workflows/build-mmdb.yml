@@ -20,7 +20,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libtext-csv-perl libmaxmind-db-writer-perl
-
+          
+      - name: Run toml2csv
+        run: |
+          chmod +x ./toml2csv
+          ./toml2csv
 
       - name: Run build_mmdb.pl
         run: perl build_mmdb.pl
