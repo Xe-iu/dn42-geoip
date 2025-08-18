@@ -6,6 +6,8 @@
 
 **国家或地区、一级行政区的名称和ISO编码，城市名称表格：[city.csv](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/city.csv)**
 
+**本仓库每天会构建新的mmdb文件到releases**
+
  **数据结构：**
  
  
@@ -46,34 +48,15 @@ accuracy_radius=200			  #半径（随便填啦，不要太离谱即可）
 # **提交您的Geoip数据**
 Fork该仓库
 
-按上面的数据结构的解释新建文件填写 
+按上面的数据结构的解释，在data目录的ipv4或ipv6文件夹内新建文件填写内容 
+
+文件名需用你在DN42取得的网段，使用其CIRD的形式，把 “/”改为“_”，在其后加上 .toml 即可
 
 填写完成后使用您在DN42注册时提交的PGP或SSH密钥签名提交
 
 然后提PR等待审核合并即可
 
 ---
-
-# **自助生成.mmdb文件**
-
-Debian系统有 libmaxmind-db-writer-perl 软件包，
-debian系的linux发行版可使用 ``` apt install libmaxmind-db-writer-perl ``` 安装。
-
-也可以手动安装：
-前往 [libmaxmind-db-writer-perl](https://github.com/maxmind/MaxMind-DB-Writer-perl) 的github仓库手动安装。
-
-然后安装cpanm ``` curl -L https://cpanm.pm/Cpanm/install | perl - -install ```
-
-执行 ``` cpanm Net::Works::Network Text::CSV ``` 安装生成.mmdb文件需要的 Perl 模块
-
-git clone 仓库，进入到仓库的根目录
-
-执行 ```./toml2csv ``` 把toml转换成csv
-执行 ``` perl build_mmdb.pl ``` 生成
-
-生成完成即可在根目录找到名为 ``` GeoLite2-City-DN42.mmdb ``` 的数据库文件。
-
-国家/城市名称默认八国语言（英语除外的部分语言的部分城市名称翻译会有缺失）
 
 **```GeoLite2-City-DN42.mmdb```的数据结构**
 
@@ -220,6 +203,27 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
 
 
 ```
+# **自助生成.mmdb文件**
+本仓库默认提供八国语言的mmdb，可以git clone 仓库后修改build_mmdb.pl文件内容，简化或添加你想要的数据结构。
+
+Debian系统有 libmaxmind-db-writer-perl 软件包，
+debian系的linux发行版可使用 ``` apt install libmaxmind-db-writer-perl ``` 安装。
+
+也可以手动安装：
+前往 [libmaxmind-db-writer-perl](https://github.com/maxmind/MaxMind-DB-Writer-perl) 的github仓库手动安装。
+
+然后安装cpanm ``` curl -L https://cpanm.pm/Cpanm/install | perl - -install ```
+
+执行 ``` cpanm Net::Works::Network Text::CSV ``` 安装生成.mmdb文件需要的 Perl 模块
+
+git clone 仓库，进入到仓库的根目录
+
+执行 ```./toml2csv ``` 把toml转换成csv
+执行 ``` perl build_mmdb.pl ``` 生成
+
+生成完成即可在根目录找到名为 ``` GeoLite2-City-DN42.mmdb ``` 的数据库文件。
+
+
 
 # **数据来源**
 国家或地区、城市名称数据：[maxmind-geoip -- Github](https://github.com/8bitsaver/maxmind-geoip)
