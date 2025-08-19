@@ -6,6 +6,8 @@
 
 ## **说明**
 
+[English](https://github.com/Xe-iu/dn42-geoip/blob/main/README_en.md)
+
 本文中使用的 ISO 编码遵循 [ISO3166](https://www.iso.org/iso-3166-country-codes.html) 标准，包含二位字母码和三位字母码。
 
 国家/地区、一级行政区名称及 ISO 编码，城市名称可参考：[city.csv](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/city.csv)。
