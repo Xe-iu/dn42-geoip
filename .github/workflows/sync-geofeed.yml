@@ -1,0 +1,55 @@
+name: Update Geofeed Data
+
+on:
+  workflow_dispatch:  # 手动触发
+  schedule:
+    - cron: '0 0 * * 0'  # 每周日 UTC 0 点自动运行
+
+jobs:
+  update-geofeed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Connect to Tailscale for DN42 Access
+        uses: tailscale/github-action@v3
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+        working-directory: geofeed
+
+      - name: Clone DN42 registry
+        run: |
+          git config --global http.sslCAInfo "$(pwd)/ca-bundle.crt"
+          git clone --depth=1 https://${{ secrets.DN42_USER }}:${{ secrets.DN42_TOKEN }}@git.dn42/dn42/registry.git registry
+        working-directory: geofeed
+      
+      - name: Download Geonames allCountries.zip
+        run: |
+          wget -O allCountries.zip https://download.geonames.org/export/dump/allCountries.zip
+          unzip -o allCountries.zip -d .
+        working-directory: geofeed
+
+      - name: Run update.py
+        run: python3 update.py
+        working-directory: geofeed
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto-update from Geofeed [skip ci]" || echo "No changes to commit"
+          git push origin HEAD
