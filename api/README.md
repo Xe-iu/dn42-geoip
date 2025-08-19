@@ -63,7 +63,7 @@ curl http://127.0.0.1:8080/
 
 ```json
 {
-  "city_info": {
+  "city": {
     "name": {
       "de": "Shanghai",
       "en": "Shanghai",
@@ -90,34 +90,18 @@ curl http://127.0.0.1:8080/
       "zh-CN": "亚洲"
     }
   },
-  "country_info": {
-    "info": {
-      "code": "CN",
-      "geoname_id": 1796236,
-      "name": {
-        "de": "China",
-        "en": "China",
-        "es": "China",
-        "fr": "Chine",
-        "ja": "中国",
-        "pt-BR": "China",
-        "ru": "Китай",
-        "zh-CN": "中国"
-      }
-    },
-    "registered": {
-      "code": "CN",
-      "geoname_id": 1814991,
-      "name": {
-        "de": "China",
-        "en": "China",
-        "es": "China",
-        "fr": "Chine",
-        "ja": "中国",
-        "pt-BR": "China",
-        "ru": "Китай",
-        "zh-CN": "中国"
-      }
+  "country": {
+    "code": "CN",
+    "geoname_id": 1796236,
+    "name": {
+      "de": "China",
+      "en": "China",
+      "es": "China",
+      "fr": "Chine",
+      "ja": "中国",
+      "pt-BR": "China",
+      "ru": "Китай",
+      "zh-CN": "中国"
     }
   },
   "ip": "172.20.54.57",
@@ -125,6 +109,20 @@ curl http://127.0.0.1:8080/
     "accuracy_radius": 200,
     "latitude": 31.22222,
     "longitude": 121.45806
+  },
+  "registered_country": {
+    "code": "CN",
+    "geoname_id": 1814991,
+    "name": {
+      "de": "China",
+      "en": "China",
+      "es": "China",
+      "fr": "Chine",
+      "ja": "中国",
+      "pt-BR": "China",
+      "ru": "Китай",
+      "zh-CN": "中国"
+    }
   },
   "subdivisions": [
     {

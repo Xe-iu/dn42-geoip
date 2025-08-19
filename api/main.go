@@ -43,35 +43,91 @@ func queryIP(ipStr string) gin.H {
 		return gin.H{"error": "internal_error"}
 	}
 
+	lat, lon := 0.0, 0.0
+	if record.Location.Latitude != nil {
+		lat = *record.Location.Latitude
+	}
+	if record.Location.Longitude != nil {
+		lon = *record.Location.Longitude
+	}
+
 	return gin.H{
 		"ip": ipStr,
-		"country_info": gin.H{
-			"info": gin.H{
-				"name":       record.Country.Names,
-				"code":       record.Country.ISOCode,
-				"geoname_id": record.Country.GeoNameID,
-			},
-			"registered": gin.H{
-				"name":       record.RegisteredCountry.Names,
-				"code":       record.RegisteredCountry.ISOCode,
-				"geoname_id": record.RegisteredCountry.GeoNameID,
-			},
+		"country": gin.H{
+			"name":       record.Country.Names,
+			"code":       record.Country.ISOCode,
+			"geoname_id": record.Country.GeoNameID,
+		},
+		"registered_country": gin.H{
+			"name":       record.RegisteredCountry.Names,
+			"code":       record.RegisteredCountry.ISOCode,
+			"geoname_id": record.RegisteredCountry.GeoNameID,
 		},
 		"continent": gin.H{
 			"name":       record.Continent.Names,
 			"code":       record.Continent.Code,
 			"geoname_id": record.Continent.GeoNameID,
 		},
-		"city_info": gin.H{
+		"city": gin.H{
 			"name":   record.City.Names,
 			"postal": record.Postal.Code,
 		},
 		"subdivisions": record.Subdivisions,
 		"location": gin.H{
-			"latitude":        record.Location.Latitude,
-			"longitude":       record.Location.Longitude,
-			"accuracy_radius": record.Location.AccuracyRadius,
+			"latitude":        lat,
+			"longitude":       lon,
+			"accuracy_radius": int(record.Location.AccuracyRadius),
 		},
+	}
+}
+
+func respond(c *gin.Context, result gin.H) {
+	ua := c.GetHeader("User-Agent")
+	isCurl := strings.Contains(strings.ToLower(ua), "curl")
+
+	outputFormat := "json"
+
+	inputFormat, ok := c.GetQuery("f")
+	if (ok && inputFormat == "text") || (!ok && isCurl) {
+		outputFormat = "text"
+	}
+
+	if outputFormat == "text" {
+		if err, ok := result["error"]; ok {
+			c.String(http.StatusBadRequest, "Error: %s\n", err)
+			return
+		}
+
+		loc := result["location"].(gin.H)
+
+		c.String(http.StatusOK,
+			`IP                 : %s
+Country            : %v (%s)
+Registered Country : %v (%s)
+Continent          : %v (%s)
+City               : %v
+Postal Code        : %s
+Coordinates        : %.4f, %.4f (±%dkm)
+`,
+			result["ip"],
+			result["country"].(gin.H)["name"],
+			result["country"].(gin.H)["code"],
+			result["registered_country"].(gin.H)["name"],
+			result["registered_country"].(gin.H)["code"],
+			result["continent"].(gin.H)["name"],
+			result["continent"].(gin.H)["code"],
+			result["city"].(gin.H)["name"],
+			result["city"].(gin.H)["postal"],
+			loc["latitude"].(float64),
+			loc["longitude"].(float64),
+			loc["accuracy_radius"].(int),
+		)
+	} else {
+		if _, ok := result["error"]; ok {
+			c.JSON(http.StatusBadRequest, result)
+		} else {
+			c.JSON(http.StatusOK, result)
+		}
 	}
 }
 
@@ -110,29 +166,22 @@ func main() {
 		c.Next()
 	})
 
+	// 根路径：返回客户端 IP 信息
 	router.GET("/", func(c *gin.Context) {
 		clientIP := c.ClientIP()
 		result := queryIP(clientIP)
-		if _, ok := result["error"]; ok {
-			c.JSON(http.StatusBadRequest, result)
-		} else {
-			c.JSON(http.StatusOK, result)
-		}
+		respond(c, result)
 	})
 
+	// 查询指定 IP
 	router.GET("/q", func(c *gin.Context) {
-		ipStr := c.Query("ip")
-		ipStr = strings.TrimSpace(ipStr)
+		ipStr := strings.TrimSpace(c.Query("ip"))
 		if ipStr == "" {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "missing_ip"})
+			respond(c, gin.H{"error": "missing_ip"})
 			return
 		}
 		result := queryIP(ipStr)
-		if _, ok := result["error"]; ok {
-			c.JSON(http.StatusBadRequest, result)
-		} else {
-			c.JSON(http.StatusOK, result)
-		}
+		respond(c, result)
 	})
 
 	serverAddr := fmt.Sprintf("%s:%d", flagHost, flagPort)
