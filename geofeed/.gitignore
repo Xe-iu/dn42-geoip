@@ -1,4 +1,5 @@
 allCountries.txt
+allCountries.zip
 *.pkl
 registry
 __pycache__
