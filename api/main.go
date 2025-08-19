@@ -162,6 +162,7 @@ func main() {
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	router.Use(func(c *gin.Context) {
+		c.Header("Access-Control-Allow-Origin", "*")
 		c.Header("X-Powered-By", "https://github.com/Xe-iu/dn42-geoip")
 		c.Next()
 	})
