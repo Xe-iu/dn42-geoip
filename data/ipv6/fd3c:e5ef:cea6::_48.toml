@@ -3,8 +3,5 @@
 [fd3c:e5ef:cea6::/48]
 country="New Zealand"
 country_code="NZ"
-latitude=-41.28664
-longitude=174.77557
-accuracy_radius=200
 source="DN42"
 

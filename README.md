@@ -6,7 +6,7 @@
 
 ## **说明**
 
-[English](https://github.com/Xe-iu/dn42-geoip/blob/main/README_en.md)
+[English](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/README_en.md)
 
 本文中使用的 ISO 编码遵循 [ISO3166](https://www.iso.org/iso-3166-country-codes.html) 标准，包含二位字母码和三位字母码。
 
@@ -25,7 +25,7 @@
 | `region`          | 一级行政区        | 选填  | 填写 city 时必须有 region，特殊情况可省略                                       |
 | `region_code`     | 一级行政区 ISO 代码 | 选填  | 填写 region 时必填                                                     |
 | `city`            | 城市（一般为二级行政区） | 选填  | 填写 city 时必须有 region，除非无 region（如澳门）                               |
-| `latitude`        | 纬度           | 必填  | 精确到最小行政区即可                                                        |
+| `latitude`        | 纬度           | 必填  | 精确到最小行政区即可，                                                        |
 | `longitude`       | 经度           | 必填  | 精确到最小行政区即可                                                        |
 | `accuracy_radius` | 经纬度精确半径      | 必填  | 适当填写即可，不必太精确                                                      |
 | `source`          | 网段注册源        | 必填  | 可填写 `DN42`、`NeoNetwork`、`ICVPN`、`ChaosVPN`、`CRXN` 或其它与 DN42 互联的网络 |
@@ -35,23 +35,21 @@
 ## **示例**
 
 ```toml
-[172.20.159.0/28]			   #整个网段
-country =      "China"		   #在DN42注册时所填写的国家或地区
-country_code = "CN"			  #国家或地区的iso码
-latitude =      39.906217		#纬度（精确到你填写的最小的行政区即可）
-longitude =     116.3912757      #纬度（精确到你填写的最小的行政区即可）
-accuracy_radius=200              #半径（随便填啦，不要太离谱即可）
+[172.20.159.0/28]			      #整个网段（主网段）
+country =      "China"		  #在DN42注册时所填写的国家或地区
+country_code = "CN"			    #国家或地区的iso码
+                            #这里的经纬度不用填写，其它必填
 source =       "DN42"		    #在最大网段是必填的，其它选填。
 
-[172.20.159.1/32]				#节点IP
-country =      "Japan"		   #节点所在的国家或地区
-country_code = "JP"			  #国家或地区的iso码
-region =       "Tokyo"		   #所在的一级行政区（没有可以不用写）
-region_code =  "13"			  #所在的一级行政区的iso码（没有可以不用写）
-city =         "Tokyo"		   #所在城市（一般为二级行政区）
-latitude =      35.6937632	   #纬度（精确到你填写的最小的行政区即可）
+[172.20.159.1/32]				      #节点IP
+country =      "Japan"		    #节点所在的国家或地区
+country_code = "JP"			      #国家或地区的iso码
+region =       "Tokyo"		    #所在的一级行政区（没有可以不用写）
+region_code =  "13"			      #所在的一级行政区的iso码（没有可以不用写）
+city =         "Tokyo"		    #所在城市（一般为二级行政区）
+latitude =      35.6937632	  #纬度（精确到你填写的最小的行政区即可）
 longitude =     139.7036319	  #纬度（精确到你填写的最小的行政区即可）
-accuracy_radius=200			  #半径（随便填啦，不要太离谱即可）
+accuracy_radius=50			      #半径（随便填啦，不要太离谱即可）
 ```
 
 ---
@@ -162,7 +160,7 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
     "location": 
       {
         "accuracy_radius": 
-          200 <uint16>
+          50 <uint16>
         "latitude": 
           35.693763 <double>
         "longitude": 
