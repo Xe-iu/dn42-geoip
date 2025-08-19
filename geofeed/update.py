@@ -39,10 +39,10 @@ for fname, data in geofeeds.items():
             outinfo += f'\ncountry="{country_name}"'
         if country_code:
             outinfo += f'\ncountry_code="{country_code}"'
-        if lat != 0 or lon != 0:
-            outinfo += f"\nlatitude={lat}"
-            outinfo += f"\nlongitude={lon}"
-            outinfo += "\naccuracy_radius=200"
+        #if lat != 0 or lon != 0:
+        #    outinfo += f"\nlatitude={lat}"
+        #    outinfo += f"\nlongitude={lon}"
+        #    outinfo += "\naccuracy_radius=200"
         if source:
             outinfo += f'\nsource="{source}"'
 
@@ -105,7 +105,7 @@ for fname, data in geofeeds.items():
         if lat != 0 or lon != 0:
             outinfo += f"\nlatitude={lat}"
             outinfo += f"\nlongitude={lon}"
-            outinfo += "\naccuracy_radius=200"
+            outinfo += "\naccuracy_radius=50"
 
         # 其它网段不写 source
         with open(outpath, "a", encoding="utf-8", newline='\n') as f:

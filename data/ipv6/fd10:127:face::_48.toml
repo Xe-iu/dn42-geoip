@@ -1,9 +1,6 @@
 [fd10:127:face::/48]
 country =      "China"
 country_code = "CN"
-latitude =      39.906217
-longitude =     116.3912757
-accuracy_radius=200
 source =       "NeoNetwork"
 
 [fd10:127:face::1/128]

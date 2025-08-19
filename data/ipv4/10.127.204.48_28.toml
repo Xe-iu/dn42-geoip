@@ -1,9 +1,6 @@
 [10.127.204.48/28]
 country =      "China"
 country_code = "CN"
-latitude =      39.906217
-longitude =     116.3912757
-accuracy_radius=200
 source =       "NeoNetwork"
 
 [10.127.204.49/32]

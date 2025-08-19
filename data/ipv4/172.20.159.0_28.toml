@@ -1,9 +1,6 @@
 [172.20.159.0/28]
 country =      "China"
 country_code = "CN"
-latitude =      39.906217
-longitude =     116.3912757
-accuracy_radius=200
 source =       "DN42"
 
 [172.20.159.1/32]
@@ -14,21 +11,21 @@ region_code =  "13"
 city =         "Tokyo"
 latitude =      35.6937632
 longitude =     139.7036319
-accuracy_radius=200
+accuracy_radius=50
 
 [172.20.159.2/32]
 country =      "Hong Kong"
 country_code = "HK"
 latitude =      22.396428
 longitude =     114.109497
-accuracy_radius=200
+accuracy_radius=50
 
 [172.20.159.3/32]
 country =      "Hong Kong"
 country_code = "HK"
 latitude =      22.396428
 longitude =     114.109497
-accuracy_radius=200
+accuracy_radius=50
 
 [172.20.159.9/32]
 country =      "France"
@@ -38,7 +35,7 @@ region_code =  "HDF"
 city =         "Roubaix"
 latitude =      50.6913
 longitude =     3.16852
-accuracy_radius=200
+accuracy_radius=50
 
 [172.20.159.10/32]
 country =      "United States"
@@ -48,4 +45,4 @@ region_code =  "MO"
 city =         "Kansas City"
 latitude =      -94.5784
 longitude =     39.10146
-accuracy_radius=200
+accuracy_radius=50

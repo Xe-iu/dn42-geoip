@@ -33,13 +33,11 @@ This repository builds a new `.mmdb` file every day at 2:00 UTC and publishes it
 ## **Example**
 
 ```toml
-[172.20.159.0/28]             # Entire subnet
-country =      "China"         # Country or region as registered in DN42
-country_code = "CN"            # ISO code of the country or region
-latitude =      39.906217      # Latitude (precision up to your smallest administrative division)
-longitude =     116.3912757    # Longitude (precision up to your smallest administrative division)
-accuracy_radius=200             # Radius (approximate value is fine)
-source =       "DN42"          # Required for the largest subnet; optional for others
+[172.20.159.0/28]             # Entire subnet (main network segment)
+country =      "China"        # Country or region as registered in DN42
+country_code = "CN"           # ISO code of the country or region
+                              # The latitude and longitude of the main network segment do not need to be filled in; others are required
+source =       "DN42"         # Required for the largest subnet; optional for others
 
 [172.20.159.1/32]             # Node IP
 country =      "Japan"        # Country or region where the node is located
@@ -49,7 +47,7 @@ region_code =  "13"           # ISO code of the first-level administrative divis
 city =         "Tokyo"        # City (usually second-level administrative division)
 latitude =      35.6937632    # Latitude (precision up to your smallest administrative division)
 longitude =     139.7036319   # Longitude (precision up to your smallest administrative division)
-accuracy_radius=200            # Radius (approximate value is fine)
+accuracy_radius=50            # Radius (approximate value is fine)
 ```
 
 ---
@@ -131,7 +129,7 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
       }
     "location": 
       {
-        "accuracy_radius": 200 <uint16>
+        "accuracy_radius": 50 <uint16>
         "latitude": 35.693763 <double>
         "longitude": 139.703632 <double>
         "time_zone": "Asia/Tokyo" <utf8_string>

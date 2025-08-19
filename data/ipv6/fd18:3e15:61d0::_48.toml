@@ -1,9 +1,6 @@
 [fd18:3e15:61d0::/48]
 country =      "China"
 country_code = "CN"
-latitude =      39.906217
-longitude =     116.3912757
-accuracy_radius=200
 source =       "DN42"
 
 [fd18:3e15:61d0::1/128]
@@ -11,7 +8,7 @@ country =      "Hong Kong"
 country_code = "HK"
 latitude =      22.396428
 longitude =     114.109497
-accuracy_radius=200
+accuracy_radius=50
 
 [fd18:3e15:61d0::2/128]
 country =      "China"
@@ -21,7 +18,7 @@ region_code =  "JS"
 city =         "Nanjing"
 latitude =      32.0615513
 longitude =     118.7915619
-accuracy_radius=200
+accuracy_radius=50
 
 [fd18:3e15:61d0::3/128]
 country =      "Japan"
@@ -31,7 +28,7 @@ region_code =  "13"
 city =         "Tokyo"
 latitude =      35.6937632
 longitude =     139.7036319
-accuracy_radius=200
+accuracy_radius=50
 
 [fd18:3e15:61d0::4/128]
 country =      "China"
@@ -41,7 +38,7 @@ region_code =  "AH"
 city =         "Hefei"
 latitude =      31.86119
 longitude =     117.283042
-accuracy_radius=200
+accuracy_radius=50
 
 [fd18:3e15:61d0::5/128]
 country =      "United States"
@@ -51,4 +48,4 @@ region_code =  "CA"
 city =         "Los Angeles"
 latitude =      24.460981
 longitude =     118.080545
-accuracy_radius=200
+accuracy_radius=50

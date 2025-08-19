@@ -3,9 +3,6 @@
 [172.21.99.88/29]
 country="China"
 country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=200
 source="DN42"
 
 [172.21.99.89/32]
@@ -13,14 +10,14 @@ country="China"
 country_code="CN"
 latitude=39.9075
 longitude=116.39723
-accuracy_radius=200
+accuracy_radius=50
 
 [172.21.99.90/32]
 country="Hong Kong"
 country_code="HK"
 latitude=22.27832
 longitude=114.17469
-accuracy_radius=200
+accuracy_radius=50
 
 [172.21.99.91/32]
 country="China"
@@ -30,5 +27,5 @@ region_code="BJ"
 city="Beijing"
 latitude=39.9075
 longitude=116.39723
-accuracy_radius=200
+accuracy_radius=50
 

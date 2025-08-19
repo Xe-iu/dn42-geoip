@@ -3,9 +3,6 @@
 [fdec:4f96:8be1::/48]
 country="China"
 country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=200
 source="DN42"
 
 [fdec:4f96:8be1::/64]
@@ -13,14 +10,14 @@ country="China"
 country_code="CN"
 latitude=39.9075
 longitude=116.39723
-accuracy_radius=200
+accuracy_radius=50
 
 [fdec:4f96:8be1:abcd::/64]
 country="Hong Kong"
 country_code="HK"
 latitude=22.27832
 longitude=114.17469
-accuracy_radius=200
+accuracy_radius=50
 
 [fdec:4f96:8be1:100::/56]
 country="China"
@@ -30,14 +27,14 @@ region_code="BJ"
 city="Beijing"
 latitude=39.9075
 longitude=116.39723
-accuracy_radius=200
+accuracy_radius=50
 
 [fdec:4f96:8be1:101::/64]
 country="China"
 country_code="CN"
 latitude=39.9075
 longitude=116.39723
-accuracy_radius=200
+accuracy_radius=50
 
 [fdec:4f96:8be1:102::/64]
 country="China"
@@ -47,5 +44,5 @@ region_code="HL"
 city="Suihua"
 latitude=46.64814
 longitude=126.96656
-accuracy_radius=200
+accuracy_radius=50
 
