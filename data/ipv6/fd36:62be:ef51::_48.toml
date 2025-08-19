@@ -1,9 +1,6 @@
 [fd36:62be:ef51::/48]
 country="Taiwan"
 country_code="TW"
-latitude=24.1047
-longitude=120.68115
-accuracy_radius=3
 source="DN42"
 
 [fd36:62be:ef51::/64]
