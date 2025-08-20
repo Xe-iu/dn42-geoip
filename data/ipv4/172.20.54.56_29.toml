@@ -1,43 +1,44 @@
 # Automatically generated from Geofeed, DO NOT EDIT
 
+[172.20.54.56/29]
+country="China"
+country_code="CN"
+source="DN42"
+
 [172.20.54.58/32]
-country=Japan
-country_code=JP
-region=Tokyo
-region_code=13
-city=Tokyo
+country="Japan"
+country_code="JP"
+region="Tokyo"
+region_code="13"
+city="Tokyo"
 latitude=35.6895
 longitude=139.69171
-accuracy_radius=200
-source=DN42
+accuracy_radius=50
 
 [172.20.54.59/32]
-country=United States
-country_code=US
-region=California
-region_code=CA
-city=San Jose
+country="United States"
+country_code="US"
+region="California"
+region_code="CA"
+city="San Jose"
 latitude=38.06659
 longitude=-122.56331
-accuracy_radius=200
-source=DN42
+accuracy_radius=50
 
 [172.20.54.57/32]
-country=China
-country_code=CN
-region=Shanghai
-region_code=SH
-city=Shanghai
+country="China"
+country_code="CN"
+region="Shanghai"
+region_code="SH"
+city="Shanghai"
 latitude=31.22222
 longitude=121.45806
-accuracy_radius=200
-source=DN42
+accuracy_radius=50
 
 [172.20.54.60/32]
-country=Singapore
-country_code=SG
+country="Singapore"
+country_code="SG"
 latitude=1.28967
 longitude=103.85007
-accuracy_radius=200
-source=DN42
+accuracy_radius=50
 

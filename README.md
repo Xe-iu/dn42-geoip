@@ -1,65 +1,83 @@
 # ***DN42-Geoip项目***
- 数据非常少，需要大家一起贡献
- 
- -----
-**本文的ISO编码指的是 ISO3166 标准中二位字母代码、三位字母代码**
 
-**国家或地区、一级行政区的名称和ISO编码，城市名称表格：[city.csv](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/city.csv)**
+> 数据非常少，需要大家一起贡献
 
-**本仓库每天凌晨俩点（2:00 ，UTC时区）会构建新的mmdb文件到releases**
+---
 
- **数据结构：**
- 
- 
-| 字段 | 说明 | 必要性 | 备注 |
-| - | - | - | - |
-| country | 国家或地区 | 必填 |
-| country_code | 国家或地区的ISO编码 | 必填 |
-| region | 一级行政区 | 选填 |
-| region_code | 一级行政区的ISO编码 | 选填 | 如果region已填写则该字段为必填 |
-| city | 城市（一般为二级行政区） | 选填 | 如果该项已填写则region字段为必填，除非没有region划分（比如澳门） |
-| latitude | 纬度 | 必填 | 精确到所填写的最小的行政区即可 |
-| longitude | 经度 | 必填 | 精确到所填写的最小的行政区即可 |
-| accuracy_radius | 经纬度精确半径 | 必填 | 随便填啦，不要太离谱即可 |
-| source | 网段注册源 | 必填 | 该网段是在哪里注册的，可填DN42、NeoNetwork、ICVPN、ChaosVPN、CRXN，或其它与DN42互联的网络，可见 https://dn42.eu/internal/Interconnections |
+## **说明**
 
-**示例：**
+[English](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/README_en.md)
 
-```
- [172.20.159.0/28]			   #整个网段
-country =      "China"		   #在DN42注册时所填写的国家或地区
-country_code = "CN"			  #国家或地区的iso码
-latitude =      39.906217		#纬度（精确到你填写的最小的行政区即可）
-longitude =     116.3912757      #纬度（精确到你填写的最小的行政区即可）
-accuracy_radius=200              #半径（随便填啦，不要太离谱即可）
+本文中使用的 ISO 编码遵循 [ISO3166](https://www.iso.org/iso-3166-country-codes.html) 标准，包含二位字母码和三位字母码。
+
+国家/地区、一级行政区名称及 ISO 编码，城市名称可参考：[city.csv](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/city.csv)。
+
+本仓库每天 UTC 时间凌晨 2 点构建新的 `.mmdb` 文件并发布到 [Releases](https://github.com/Xe-iu/dn42-geoip/releases)。
+
+---
+
+## **数据结构**
+
+| 字段                | 说明           | 必要性 | 备注                                                                |
+| ----------------- | ------------ | --- | ----------------------------------------------------------------- |
+| `country`         | 国家或地区        | 必填  |                                                                   |
+| `country_code`    | 国家或地区 ISO 代码 | 必填  |                                                                   |
+| `region`          | 一级行政区        | 选填  | 填写 city 时必须有 region，特殊情况可省略                                       |
+| `region_code`     | 一级行政区 ISO 代码 | 选填  | 填写 region 时必填                                                     |
+| `city`            | 城市（一般为二级行政区） | 选填  | 填写 city 时必须有 region，除非无 region（如澳门）                               |
+| `latitude`        | 纬度           | 必填  | 精确到最小行政区即可，                                                        |
+| `longitude`       | 经度           | 必填  | 精确到最小行政区即可                                                        |
+| `accuracy_radius` | 经纬度精确半径      | 必填  | 适当填写即可，不必太精确                                                      |
+| `source`          | 网段注册源        | 必填  | 可填写 `DN42`、`NeoNetwork`、`ICVPN`、`ChaosVPN`、`CRXN` 或其它与 DN42 互联的网络 |
+
+---
+
+## **示例**
+
+```toml
+[172.20.159.0/28]			      #整个网段（主网段）
+country =      "China"		  #在DN42注册时所填写的国家或地区
+country_code = "CN"			    #国家或地区的iso码
+                            #这里的经纬度不用填写，其它必填
 source =       "DN42"		    #在最大网段是必填的，其它选填。
 
-[172.20.159.1/32]				#节点IP
-country =      "Japan"		   #节点所在的国家或地区
-country_code = "JP"			  #国家或地区的iso码
-region =       "Tokyo"		   #所在的一级行政区（没有可以不用写）
-region_code =  "13"			  #所在的一级行政区的iso码（没有可以不用写）
-city =         "Tokyo"		   #所在城市（一般为二级行政区）
-latitude =      35.6937632	   #纬度（精确到你填写的最小的行政区即可）
+[172.20.159.1/32]				      #节点IP
+country =      "Japan"		    #节点所在的国家或地区
+country_code = "JP"			      #国家或地区的iso码
+region =       "Tokyo"		    #所在的一级行政区（没有可以不用写）
+region_code =  "13"			      #所在的一级行政区的iso码（没有可以不用写）
+city =         "Tokyo"		    #所在城市（一般为二级行政区）
+latitude =      35.6937632	  #纬度（精确到你填写的最小的行政区即可）
 longitude =     139.7036319	  #纬度（精确到你填写的最小的行政区即可）
-accuracy_radius=200			  #半径（随便填啦，不要太离谱即可）
+accuracy_radius=50			      #半径（随便填啦，不要太离谱即可）
 ```
----
-
-# **提交您的Geoip数据**
-Fork该仓库
-
-按上面的数据结构的解释，在data目录的ipv4或ipv6文件夹内新建文件填写内容 
-
-文件名需用你在DN42取得的网段，使用其CIRD的形式，把 “/”改为“_”，在其后加上 .toml 即可
-
-填写完成后使用您在DN42注册时提交的PGP或SSH密钥签名提交
-
-然后提PR等待审核合并即可
 
 ---
 
-**```GeoLite2-City-DN42.mmdb```的数据结构**
+## **提交 Geoip 数据**
+
+本项目支持通过发布的 Geofeed 自动更新数据，也可以手动提交数据。
+
+请注意：**如果您已发布 Geofeed，请勿手动修改数据，会被 Geofeed 数据覆盖。直接修改你发布的 Geofeed 即可。**
+
+### 发布 Geofeed
+
+1. 依照 [RFC 8805](https://www.rfc-editor.org/rfc/rfc8805.html) 编写 Geofeed CSV 文件
+2. 依照 [RFC 9632](https://www.rfc-editor.org/rfc/rfc9632.html) 将 Geofeed 网址发布到 DN42 Registry
+3. 本项目UTC时间每周日0点会自动抓取 Geofeed 文件，更新数据
+
+### 手动提交
+
+1. Fork 本仓库
+2. 在 `data/ipv4` 或 `data/ipv6` 文件夹内新建文件，填写内容
+3. 文件名格式：使用你的 DN42 网段，将 `/` 替换为 `_`，然后加 `.toml` 后缀
+   例如：`172.20.159.0_28.toml`
+4. 提交时请使用网段 inetnum/inet6num 中任意一个 `mnt-by` 的 **PGP** 或 **SSH** 密钥签名
+5. 发起 PR 等待审核合并
+
+---
+
+## **.mmdb 文件结构示例**
 
 ```
 root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mmdb -i fd43:83b9:82e2:face::
@@ -142,7 +160,7 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
     "location": 
       {
         "accuracy_radius": 
-          200 <uint16>
+          50 <uint16>
         "latitude": 
           35.693763 <double>
         "longitude": 
@@ -201,30 +219,43 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
         }
       ]
   }
-
-
 ```
-# **自助生成.mmdb文件**
-本仓库默认提供八国语言的mmdb，可以git clone 仓库后修改build_mmdb.pl文件内容，简化或添加你想要的数据结构。
 
-Debian系统有 libmaxmind-db-writer-perl 软件包，
-debian系的linux发行版可使用 ``` apt install libmaxmind-db-writer-perl ``` 安装。
+---
 
-也可以手动安装：
-前往 [libmaxmind-db-writer-perl](https://github.com/maxmind/MaxMind-DB-Writer-perl) 的github仓库手动安装。
+## **手动生成 `.mmdb` 文件**
 
-然后安装cpanm ``` curl -L https://cpanm.pm/Cpanm/install | perl - -install ```
+1. 安装依赖：
 
-执行 ``` cpanm Net::Works::Network Text::CSV ``` 安装生成.mmdb文件需要的 Perl 模块
+```bash
+sudo apt install libmaxmind-db-writer-perl
+curl -L https://cpanm.pm/Cpanm/install | perl - -install
+cpanm Net::Works::Network Text::CSV
+```
 
-git clone 仓库，进入到仓库的根目录
+2. 克隆仓库：
 
-执行 ```./toml2csv ``` 把toml转换成csv
-执行 ``` perl build_mmdb.pl ``` 生成
+```bash
+git clone https://github.com/Xe-iu/dn42-geoip.git
+cd dn42-geoip
+```
 
-生成完成即可在根目录找到名为 ``` GeoLite2-City-DN42.mmdb ``` 的数据库文件。
+3. TOML 转 CSV：
 
+```bash
+./toml2csv
+```
 
+4. 生成 `.mmdb` 文件：
 
-# **数据来源**
-国家或地区、城市名称数据：[maxmind-geoip -- Github](https://github.com/8bitsaver/maxmind-geoip)
+```bash
+perl build_mmdb.pl
+```
+
+5. 成功后会在根目录得到 `GeoLite2-City-DN42.mmdb` 文件
+
+---
+
+## **数据来源**
+
+* 国家、城市名称数据：[maxmind-geoip](https://github.com/8bitsaver/maxmind-geoip)
