@@ -6,7 +6,8 @@
 
 ## **说明**
 
-[English](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/README_en.md)
+[English](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/README_en-US.md) 
+[繁體中文](https://github.com/Xe-iu/dn42-geoip/blob/main/docs/README_zh-Hant.md) 
 
 本文中使用的 ISO 编码遵循 [ISO3166](https://www.iso.org/iso-3166-country-codes.html) 标准，包含二位字母码和三位字母码。
 
