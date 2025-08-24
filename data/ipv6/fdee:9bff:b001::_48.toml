@@ -1,0 +1,21 @@
+[fdee:9bff:b001::/48]
+country =      "China"
+country_code = "CN"
+source =       "DN42"
+
+[fdee:9bff:b001::1/128]
+country = "Hong Kong"
+country_code = "HK"
+latitude = 22.28420
+longitude = 114.17590
+accuracy_radius = 50
+
+[fdee:9bff:b001:1::/64]
+country = "China"
+country_code = "CN"
+region = "Shanxi"
+region_code = "SX"
+city = "Taiyuan"
+latitude = 37.86030
+longitude = 112.58790
+accuracy_radius = 50
