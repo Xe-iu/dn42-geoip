@@ -1,0 +1,14 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[fdd0:f8f8:a076::/48]
+country="Belarus"
+country_code="BY"
+source="DN42"
+
+[fdd0:f8f8:a076::/48]
+country="Belarus"
+country_code="BY"
+latitude=53.90019
+longitude=27.56653
+accuracy_radius=50
+

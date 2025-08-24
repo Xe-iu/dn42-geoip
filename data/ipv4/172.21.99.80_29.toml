@@ -1,0 +1,14 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.21.99.80/29]
+country="Belarus"
+country_code="BY"
+source="DN42"
+
+[172.21.99.80/29]
+country="Belarus"
+country_code="BY"
+latitude=53.90019
+longitude=27.56653
+accuracy_radius=50
+

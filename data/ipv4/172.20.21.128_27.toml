@@ -5,3 +5,23 @@ country="China"
 country_code="CN"
 source="DN42"
 
+[172.20.21.129/32]
+country="China"
+country_code="CN"
+region="Shanghai"
+region_code="SH"
+city="Shanghai"
+latitude=31.22222
+longitude=121.45806
+accuracy_radius=50
+
+[172.20.21.130/32]
+country="China"
+country_code="CN"
+region="Shanghai"
+region_code="SH"
+city="Shanghai"
+latitude=31.22222
+longitude=121.45806
+accuracy_radius=50
+

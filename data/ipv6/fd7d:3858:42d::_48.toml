@@ -42,3 +42,23 @@ latitude=1.28967
 longitude=103.85007
 accuracy_radius=50
 
+[fd7d:3858:42d:1::1/128]
+country="China"
+country_code="CN"
+region="Shanghai"
+region_code="SH"
+city="Shanghai"
+latitude=31.22222
+longitude=121.45806
+accuracy_radius=50
+
+[fd7d:3858:42d:1::2/128]
+country="China"
+country_code="CN"
+region="Shanghai"
+region_code="SH"
+city="Shanghai"
+latitude=31.22222
+longitude=121.45806
+accuracy_radius=50
+
