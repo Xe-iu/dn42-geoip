@@ -1,0 +1,9 @@
+[fd96:c033:6deb::/48]
+country =      "Spain"
+country_code = "ES"
+region =       "Andalusia"
+region_code =  "AN"
+city =         "Estepona"
+latitude =     36.4238
+longitude =    -5.1443
+accuracy_radius=50
