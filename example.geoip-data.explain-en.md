@@ -3,7 +3,8 @@
 >This article was translated by ChatGPT
 
 -----
-##**GeoIP data file naming rules**
+## **GeoIP data file naming rules**
+
 Similar to the DN42 registry, the difference is that GeoIP data files use the `.toml` suffix.
 
 Example:
@@ -19,7 +20,7 @@ For IPv6 prefixes, please create them under `data/ipv6`
 
 ------------
 
-##**Field explanation under `[Master]`**
+## **Field explanation under `[Master]`**
 
 | Field | Name | Required | Description |
 | - | - | - | - |
@@ -31,7 +32,7 @@ For IPv6 prefixes, please create them under `data/ipv6`
 
 ------------
 
-##**Field explanation under `[[GeoData]]`**
+## **Field explanation under `[[GeoData]]`**
 
 | Field | Name | Required | Description |
 | - | - | - | - |
@@ -49,6 +50,7 @@ For IPv6 prefixes, please create them under `data/ipv6`
 Each `[[GeoData]]` can only contain one `CIRD`. If there are multiple `CIRD`s, create multiple `[[GeoData]]` entries.
 
 ---
+
 ### About experimental options
 - If you want to provide more precise geolocation information or meaningful notes, you can use the `address.*` fields. These are all optional.
 - **Meaningful notes** may include: hosting provider information, node role within your AS (edge node, backbone, etc.), ISP information for home nodes, etc.
@@ -71,5 +73,6 @@ Each `[[GeoData]]` can only contain one `CIRD`. If there are multiple `CIRD`s, c
 | `address.zh-hans` | Traditional Chinese address | Optional | Must be in Chinese |
 
 ---
+
 ## Partial data sources
 - Country and city name data: [maxmind-geoip](https://github.com/8bitsaver/maxmind-geoip)
