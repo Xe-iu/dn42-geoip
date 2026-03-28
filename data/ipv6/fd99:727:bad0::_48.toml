@@ -1,774 +1,937 @@
-# Automatically generated from Geofeed, DO NOT EDIT
-
-[fd99:727:bad0::/48]
-source="DN42"
-
-[fd99:727:bad0:100::/56]
-country="Vietnam"
-country_code="VN"
-region="Ho Chi Minh"
-region_code="SG"
-city="Ho Chi Minh City"
-latitude=10.82302
-longitude=106.62965
-accuracy_radius=50
-
-[fd99:727:bad0:200::/56]
-country="United States"
-country_code="US"
-region="Utah"
-region_code="UT"
-city="Salt Lake City"
-latitude=40.76078
-longitude=-111.89105
-accuracy_radius=50
-
-[fd99:727:bad0:300::/56]
-country="Malaysia"
-country_code="MY"
-region="Johor"
-region_code="01"
-city="Johor Bahru"
-latitude=1.4655
-longitude=103.7578
-accuracy_radius=50
-
-[fd99:727:bad0:400::/56]
-country="United States"
-country_code="US"
-region="Illinois"
-region_code="IL"
-city="Chicago"
-latitude=41.85003
-longitude=-87.65005
-accuracy_radius=50
-
-[fd99:727:bad0:500::/56]
-country="Vietnam"
-country_code="VN"
-region="Hanoi"
-region_code="HN"
-city="Hanoi"
-latitude=21.0
-longitude=105.75
-accuracy_radius=50
-
-[fd99:727:bad0:600::/56]
-country="Vietnam"
-country_code="VN"
-region="Ho Chi Minh"
-region_code="SG"
-city="Ho Chi Minh City"
-latitude=10.82302
-longitude=106.62965
-accuracy_radius=50
-
-[fd99:727:bad0:700::/56]
-country="Germany"
-country_code="DE"
-region="Hesse"
-region_code="HE"
-city="Frankfurt am Main"
-latitude=50.11552
-longitude=8.68417
-accuracy_radius=50
-
-[fd99:727:bad0:800::/56]
-country="Germany"
-country_code="DE"
-region="Hesse"
-region_code="HE"
-city="Frankfurt am Main"
-latitude=50.11552
-longitude=8.68417
-accuracy_radius=50
-
-[fd99:727:bad0:a00::/56]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
-
-[fd99:727:bad0:b00::/56]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
-
-[fd99:727:bad0:c00::/56]
-country="Vietnam"
-country_code="VN"
-region="Đồng Nai Province"
-region_code="39"
-city="Dong Nai"
-latitude=11.43205
-longitude=107.03526
-accuracy_radius=50
-
-[fd99:727:bad0:d00::/56]
-country="Vietnam"
-country_code="VN"
-region="Đồng Nai Province"
-region_code="39"
-city="Dong Nai"
-latitude=11.43205
-longitude=107.03526
-accuracy_radius=50
-
-[fd99:727:bad0:e00::/56]
-country="Australia"
-country_code="AU"
-region="New South Wales"
-region_code="NSW"
-city="Sydney"
-latitude=-33.86785
-longitude=151.20732
-accuracy_radius=50
-
-[fd99:727:bad0:f00::/56]
-country="Australia"
-country_code="AU"
-region="New South Wales"
-region_code="NSW"
-city="Sydney"
-latitude=-33.86785
-longitude=151.20732
-accuracy_radius=50
-
-[fd99:727:bad0:1000::/56]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
-
-[fd99:727:bad0:1100::/56]
-country="Australia"
-country_code="AU"
-region="New South Wales"
-region_code="NSW"
-city="Sydney"
-latitude=-33.86785
-longitude=151.20732
-accuracy_radius=50
-
-[fd99:727:bad0:1200::/56]
-country="Vietnam"
-country_code="VN"
-region="Đồng Nai Province"
-region_code="39"
-city="Dong Nai"
-latitude=11.43205
-longitude=107.03526
-accuracy_radius=50
-
-[fd99:727:bad0:1300::/56]
-country="Vietnam"
-country_code="VN"
-region="Đồng Nai Province"
-region_code="39"
-city="Dong Nai"
-latitude=11.43205
-longitude=107.03526
-accuracy_radius=50
-
-[fd99:727:bad0:1400::/56]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
-
-[fd99:727:bad0:1600::/56]
-country="Singapore"
-country_code="SG"
-latitude=1.28967
-longitude=103.85007
-accuracy_radius=50
-
-[fd99:727:bad0:1700::/56]
-country="Indonesia"
-country_code="ID"
-region="Jakarta"
-region_code="JK"
-city="Jakarta"
-latitude=-6.21462
-longitude=106.84513
-accuracy_radius=50
-
-[fd99:727:bad0:1800::/56]
-country="Singapore"
-country_code="SG"
-latitude=1.28967
-longitude=103.85007
-accuracy_radius=50
-
-[fd99:727:bad0:1900::/56]
-country="Singapore"
-country_code="SG"
-latitude=1.28967
-longitude=103.85007
-accuracy_radius=50
-
-[fd99:727:bad0:1a00::/56]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
-
-[fd99:727:bad0:1b00::/56]
-country="Brazil"
-country_code="BR"
-region="São Paulo"
-region_code="SP"
-city="Sao Paulo"
-latitude=-7.23333
-longitude=-62.9
-accuracy_radius=50
-
-[fd99:727:bad0:1c00::/56]
-country="Hong Kong"
-country_code="HK"
-latitude=22.27832
-longitude=114.17469
-accuracy_radius=50
-
-[fd99:727:bad0:1d00::/56]
-country="United States"
-country_code="US"
-region="Florida"
-region_code="FL"
-city="Tampa"
-latitude=27.94752
-longitude=-82.45843
-accuracy_radius=50
-
-[fd99:727:bad0:1e00::/56]
-country="Taiwan"
-country_code="TW"
-region="Taipei City"
-region_code="TPE"
-city="Taipei"
-latitude=25.05306
-longitude=121.52639
-accuracy_radius=50
-
-[fd99:727:bad0:1f00::/56]
-country="Vietnam"
-country_code="VN"
-region="Da Nang"
-region_code="DN"
-city="Da Nang"
-latitude=16.06778
-longitude=108.22083
-accuracy_radius=50
-
-[fd99:727:bad0:2000::/56]
-country="Japan"
-country_code="JP"
-region="Tokyo"
-region_code="13"
-city="Tokyo"
-latitude=35.6895
-longitude=139.69171
-accuracy_radius=50
-
-[fd99:727:bad0:2100::/56]
-country="Angola"
-country_code="AO"
-region="Luanda Province"
-region_code="LUA"
-city="Luanda"
-latitude=-9.48333
-longitude=16.6
-accuracy_radius=50
-
-[fd99:727:bad0:2200::/56]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="San Jose"
-latitude=38.06659
-longitude=-122.56331
-accuracy_radius=50
-
-[fd99:727:bad0:2300::/56]
-country="United Kingdom"
-country_code="GB"
-region="England"
-region_code="ENG"
-city="London"
-latitude=51.50853
-longitude=-0.12574
-accuracy_radius=50
-
-[fd99:727:bad0:2400::/56]
-country="United States"
-country_code="US"
-region="New York"
-region_code="NY"
-city="New York City"
-latitude=40.71427
-longitude=-74.00597
-accuracy_radius=50
-
-[fd99:727:bad0:2500::/56]
-country="Russia"
-country_code="RU"
-region="Novosibirsk Oblast"
-region_code="NVS"
-city="Novosibirsk"
-latitude=55.02259
-longitude=82.93175
-accuracy_radius=50
-
-[fd99:727:bad0:2600::/56]
-country="India"
-country_code="IN"
-region="Maharashtra"
-region_code="MH"
-city="Mumbai"
-latitude=19.07283
-longitude=72.88261
-accuracy_radius=50
-
-[fd99:727:bad0:2700::/56]
-country="United States"
-country_code="US"
-region="Missouri"
-region_code="MO"
-city="Kansas City"
-latitude=39.09973
-longitude=-94.57857
-accuracy_radius=50
-
-[fd99:727:bad0:2800::/56]
-country="Australia"
-country_code="AU"
-region="Victoria"
-region_code="VIC"
-city="Melbourne"
-latitude=-37.814
-longitude=144.96332
-accuracy_radius=50
-
-[fd99:727:bad0:2900::/56]
-country="Russia"
-country_code="RU"
-region="Moscow"
-region_code="MOW"
-city="Moscow"
-latitude=55.75204
-longitude=37.61781
-accuracy_radius=50
-
-[fd99:727:bad0:2a00::/56]
-country="Canada"
-country_code="CA"
-region="Ontario"
-region_code="ON"
-city="Toronto"
-latitude=46.45012
-longitude=-63.382
-accuracy_radius=50
-
-[fd99:727:bad0:2b00::/56]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
-
-[fd99:727:bad0:2c00::/56]
-country="Singapore"
-country_code="SG"
-latitude=1.28967
-longitude=103.85007
-accuracy_radius=50
-
-[fd99:727:bad0:2d00::/56]
-country="Mexico"
-country_code="MX"
-region="México"
-region_code="MEX"
-city="Mexico City"
-latitude=19.42847
-longitude=-99.12766
-accuracy_radius=50
-
-[fd99:727:bad0:2e00::/56]
-country="Chile"
-country_code="CL"
-region="Santiago Metropolitan"
-region_code="RM"
-city="Santiago"
-latitude=-33.45694
-longitude=-70.64827
-accuracy_radius=50
-
-[fd99:727:bad0:2f00::/56]
-country="Japan"
-country_code="JP"
-region="Tokyo"
-region_code="13"
-city="Tokyo"
-latitude=35.6895
-longitude=139.69171
-accuracy_radius=50
-
-[fd99:727:bad0:3000::/56]
-country="Poland"
-country_code="PL"
-region="Pomerania"
-region_code="22"
-city="Gdańsk"
-latitude=54.35227
-longitude=18.64912
-accuracy_radius=50
-
-[fd99:727:bad0:3100::/56]
-country="United States"
-country_code="US"
-region="Washington"
-region_code="WA"
-city="Seattle"
-latitude=47.60621
-longitude=-122.33207
-accuracy_radius=50
-
-[fd99:727:bad0:3200::/56]
-country="Vietnam"
-country_code="VN"
-region="Nghệ An Province"
-region_code="22"
-city="Vinh"
-latitude=18.67337
-longitude=105.69232
-accuracy_radius=50
-
-[fd99:727:bad0:3300::/56]
-country="The Netherlands"
-country_code="NL"
-region="Flevoland"
-region_code="FL"
-city="Lelystad"
-latitude=52.50833
-longitude=5.475
-accuracy_radius=50
-
-[fd99:727:bad0:3400::/56]
-country="Sweden"
-country_code="SE"
-region="Stockholm County"
-region_code="AB"
-city="Stockholm"
-latitude=59.32938
-longitude=18.06871
-accuracy_radius=50
-
-[fd99:727:bad0:3500::/56]
-country="Bulgaria"
-country_code="BG"
-region="Sofia-Capital"
-region_code="22"
-city="Sofia"
-latitude=42.69751
-longitude=23.32415
-accuracy_radius=50
-
-[fd99:727:bad0:3600::/56]
-country="France"
-country_code="FR"
-region="Île-de-France"
-region_code="IDF"
-city="Paris"
-latitude=48.8534
-longitude=2.3486
-accuracy_radius=50
-
-[fd99:727:bad0:3700::/56]
-country="Nigeria"
-country_code="NG"
-region="Lagos"
-region_code="LA"
-city="Lagos"
-latitude=6.45407
-longitude=3.39467
-accuracy_radius=50
-
-[fd99:727:bad0:3800::/56]
-country="Türkiye"
-country_code="TR"
-region="Istanbul"
-region_code="34"
-city="Istanbul"
-latitude=41.01384
-longitude=28.94966
-accuracy_radius=50
-
-[fd99:727:bad0:3900::/56]
-country="Finland"
-country_code="FI"
-region="Uusimaa"
-region_code="18"
-city="Helsinki"
-latitude=60.16952
-longitude=24.93545
-accuracy_radius=50
-
-[fd99:727:bad0:3a00::/56]
-country="South Africa"
-country_code="ZA"
-region="Gauteng"
-region_code="GP"
-city="Johannesburg"
-latitude=-26.20227
-longitude=28.04363
-accuracy_radius=50
-
-[fd99:727:bad0:3b00::/56]
-country="United States"
-country_code="US"
-region="Arizona"
-region_code="AZ"
-city="Phoenix"
-latitude=33.44838
-longitude=-112.07404
-accuracy_radius=50
-
-[fd99:727:bad0:3c00::/56]
-country="United States"
-country_code="US"
-region="Texas"
-region_code="TX"
-city="Houston"
-latitude=29.76328
-longitude=-95.36327
-accuracy_radius=50
-
-[fd99:727:bad0:3d00::/56]
-country="The Netherlands"
-country_code="NL"
-region="North Holland"
-region_code="NH"
-city="Amsterdam"
-latitude=52.37403
-longitude=4.88969
-accuracy_radius=50
-
-[fd99:727:bad0:3e00::/56]
-country="United States"
-country_code="US"
-region="Nevada"
-region_code="NV"
-city="Las Vegas"
-latitude=36.17497
-longitude=-115.13722
-accuracy_radius=50
-
-[fd99:727:bad0:3f00::/56]
-country="United States"
-country_code="US"
-region="Michigan"
-region_code="MI"
-city="Detroit"
-latitude=42.33143
-longitude=-83.04575
-accuracy_radius=50
-
-[fd99:727:bad0:4000::/56]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
-
-[fd99:727:bad0:4100::/56]
-country="Ireland"
-country_code="IE"
-region="Leinster"
-region_code="L"
-city="Dublin"
-latitude=53.33306
-longitude=-6.24889
-accuracy_radius=50
-
-[fd99:727:bad0:4200::/56]
-country="Spain"
-country_code="ES"
-region="Madrid"
-region_code="MD"
-city="Madrid"
-latitude=40.4165
-longitude=-3.70256
-accuracy_radius=50
-
-[fd99:727:bad0:4300::/56]
-country="Iceland"
-country_code="IS"
-region="Capital Region"
-region_code="1"
-city="Reykjavík"
-latitude=64.13548
-longitude=-21.89541
-accuracy_radius=50
-
-[fd99:727:bad0:4400::/56]
-country="Germany"
-country_code="DE"
-region="Saxony"
-region_code="SN"
-city="Falkenstein"
-latitude=47.94063
-longitude=8.01702
-accuracy_radius=50
-
-[fd99:727:bad0:4500::/56]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
-
-[fd99:727:bad0:4600::/56]
-country="Japan"
-country_code="JP"
-region="Osaka"
-region_code="27"
-city="Osaka"
-latitude=35.95
-longitude=137.26667
-accuracy_radius=50
-
-[fd99:727:bad0:4700::/56]
-country="Japan"
-country_code="JP"
-region="Tokyo"
-region_code="13"
-city="Tokyo"
-latitude=35.6895
-longitude=139.69171
-accuracy_radius=50
-
-[fd99:727:bad0:4800::/56]
-country="United States"
-country_code="US"
-region="Hawaii"
-region_code="HI"
-city="Honolulu"
-latitude=21.30694
-longitude=-157.85833
-accuracy_radius=50
-
-[fd99:727:bad0:4900::/56]
-country="Lithuania"
-country_code="LT"
-region="Siauliai"
-region_code="SA"
-city="Šiauliai"
-latitude=55.93333
-longitude=23.31667
-accuracy_radius=50
-
-[fd99:727:bad0:4a00::/56]
-country="Japan"
-country_code="JP"
-region="Osaka"
-region_code="27"
-city="Osaka"
-latitude=35.95
-longitude=137.26667
-accuracy_radius=50
-
-[fd99:727:bad0:4b00::/56]
-country="South Korea"
-country_code="KR"
-region="Seoul"
-region_code="11"
-city="Seoul"
-latitude=37.58333
-longitude=127.0
-accuracy_radius=50
-
-[fd99:727:bad0:4c00::/56]
-country="Hong Kong"
-country_code="HK"
-latitude=22.27832
-longitude=114.17469
-accuracy_radius=50
-
-[fd99:727:bad0:4d00::/56]
-country="Switzerland"
-country_code="CH"
-region="Zurich"
-region_code="ZH"
-city="Zürich"
-latitude=47.36667
-longitude=8.55
-accuracy_radius=50
-
-[fd99:727:bad0:4e00::/56]
-country="Morocco"
-country_code="MA"
-region="Rabat-Salé-Kénitra"
-region_code="04"
-city="Rabat"
-latitude=33.99111
-longitude=-6.84006
-accuracy_radius=50
-
-[fd99:727:bad0:4f00::/56]
-country="Canada"
-country_code="CA"
-region="Quebec"
-region_code="QC"
-city="Beauharnois"
-latitude=45.31341
-longitude=-73.8725
-accuracy_radius=50
-
-[fd99:727:bad0:5000::/56]
-country="New Zealand"
-country_code="NZ"
-region="Auckland"
-region_code="AUK"
-city="Auckland"
-latitude=-36.85582
-longitude=174.74304
-accuracy_radius=50
-
-[fd99:727:bad0:5100::/56]
-country="Guam"
-country_code="GU"
-latitude=13.47861
-longitude=144.81834
-accuracy_radius=50
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
+
+[Master]
+CIDR = "fd99:727:bad0::/48"
+fallback_to_master = false
+source = "DN42"
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:100::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Ho Chi Minh"
+region.code = "SG"
+city = "Ho Chi Minh City"
+latitude = 10.82302
+longitude = 106.62965
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:200::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Utah"
+region.code = "UT"
+city = "Salt Lake City"
+latitude = 40.76078
+longitude = -111.89105
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:300::/56"
+anycast = false
+country.name = "Malaysia"
+country.code = "MY"
+region.name = "Johor"
+region.code = "01"
+city = "Johor Bahru"
+latitude = 1.4655
+longitude = 103.7578
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:400::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Illinois"
+region.code = "IL"
+city = "Chicago"
+latitude = 41.85003
+longitude = -87.65005
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:500::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Hanoi"
+region.code = "HN"
+city = "Hanoi"
+latitude = 21.0
+longitude = 105.75
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:600::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Ho Chi Minh"
+region.code = "SG"
+city = "Ho Chi Minh City"
+latitude = 10.82302
+longitude = 106.62965
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:700::/56"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt am Main"
+latitude = 50.11552
+longitude = 8.68417
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:800::/56"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt am Main"
+latitude = 50.11552
+longitude = 8.68417
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:a00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:b00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:c00::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Đồng Nai Province"
+region.code = "39"
+city = "Dong Nai"
+latitude = 11.43205
+longitude = 107.03526
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:d00::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Đồng Nai Province"
+region.code = "39"
+city = "Dong Nai"
+latitude = 11.43205
+longitude = 107.03526
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:e00::/56"
+anycast = false
+country.name = "Australia"
+country.code = "AU"
+region.name = "New South Wales"
+region.code = "NSW"
+city = "Sydney"
+latitude = -33.86785
+longitude = 151.20732
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:f00::/56"
+anycast = false
+country.name = "Australia"
+country.code = "AU"
+region.name = "New South Wales"
+region.code = "NSW"
+city = "Sydney"
+latitude = -33.86785
+longitude = 151.20732
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1000::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1100::/56"
+anycast = false
+country.name = "Australia"
+country.code = "AU"
+region.name = "New South Wales"
+region.code = "NSW"
+city = "Sydney"
+latitude = -33.86785
+longitude = 151.20732
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1200::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Đồng Nai Province"
+region.code = "39"
+city = "Dong Nai"
+latitude = 11.43205
+longitude = 107.03526
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1300::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Đồng Nai Province"
+region.code = "39"
+city = "Dong Nai"
+latitude = 11.43205
+longitude = 107.03526
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1400::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1600::/56"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+latitude = 1.28967
+longitude = 103.85007
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1700::/56"
+anycast = false
+country.name = "Indonesia"
+country.code = "ID"
+region.name = "Jakarta"
+region.code = "JK"
+city = "Jakarta"
+latitude = -6.21462
+longitude = 106.84513
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1800::/56"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+latitude = 1.28967
+longitude = 103.85007
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1900::/56"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+latitude = 1.28967
+longitude = 103.85007
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1a00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1b00::/56"
+anycast = false
+country.name = "Brazil"
+country.code = "BR"
+region.name = "São Paulo"
+region.code = "SP"
+city = "Sao Paulo"
+latitude = -7.23333
+longitude = -62.9
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1c00::/56"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.27832
+longitude = 114.17469
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1d00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Florida"
+region.code = "FL"
+city = "Tampa"
+latitude = 27.94752
+longitude = -82.45843
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1e00::/56"
+anycast = false
+country.name = "Taiwan"
+country.code = "TW"
+region.name = "Taipei City"
+region.code = "TPE"
+city = "Taipei"
+latitude = 25.05306
+longitude = 121.52639
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:1f00::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Da Nang"
+region.code = "DN"
+city = "Da Nang"
+latitude = 16.06778
+longitude = 108.22083
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2000::/56"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6895
+longitude = 139.69171
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2100::/56"
+anycast = false
+country.name = "Angola"
+country.code = "AO"
+region.name = "Luanda Province"
+region.code = "LUA"
+city = "Luanda"
+latitude = -9.48333
+longitude = 16.6
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2200::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "San Jose"
+latitude = 38.06659
+longitude = -122.56331
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2300::/56"
+anycast = false
+country.name = "United Kingdom"
+country.code = "GB"
+region.name = "England"
+region.code = "ENG"
+city = "London"
+latitude = 51.50853
+longitude = -0.12574
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2400::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "New York"
+region.code = "NY"
+city = "New York City"
+latitude = 40.71427
+longitude = -74.00597
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2500::/56"
+anycast = false
+country.name = "Russia"
+country.code = "RU"
+region.name = "Novosibirsk Oblast"
+region.code = "NVS"
+city = "Novosibirsk"
+latitude = 55.02259
+longitude = 82.93175
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2600::/56"
+anycast = false
+country.name = "India"
+country.code = "IN"
+region.name = "Maharashtra"
+region.code = "MH"
+city = "Mumbai"
+latitude = 19.07283
+longitude = 72.88261
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2700::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Missouri"
+region.code = "MO"
+city = "Kansas City"
+latitude = 39.09973
+longitude = -94.57857
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2800::/56"
+anycast = false
+country.name = "Australia"
+country.code = "AU"
+region.name = "Victoria"
+region.code = "VIC"
+city = "Melbourne"
+latitude = -37.814
+longitude = 144.96332
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2900::/56"
+anycast = false
+country.name = "Russia"
+country.code = "RU"
+region.name = "Moscow"
+region.code = "MOW"
+city = "Moscow"
+latitude = 55.75204
+longitude = 37.61781
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2a00::/56"
+anycast = false
+country.name = "Canada"
+country.code = "CA"
+region.name = "Ontario"
+region.code = "ON"
+city = "Toronto"
+latitude = 46.45012
+longitude = -63.382
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2b00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2c00::/56"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+latitude = 1.28967
+longitude = 103.85007
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2d00::/56"
+anycast = false
+country.name = "Mexico"
+country.code = "MX"
+region.name = "México"
+region.code = "MEX"
+city = "Mexico City"
+latitude = 19.42847
+longitude = -99.12766
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2e00::/56"
+anycast = false
+country.name = "Chile"
+country.code = "CL"
+region.name = "Santiago Metropolitan"
+region.code = "RM"
+city = "Santiago"
+latitude = -33.45694
+longitude = -70.64827
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:2f00::/56"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6895
+longitude = 139.69171
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3000::/56"
+anycast = false
+country.name = "Poland"
+country.code = "PL"
+region.name = "Pomerania"
+region.code = "22"
+city = "Gdańsk"
+latitude = 54.35227
+longitude = 18.64912
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3100::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Washington"
+region.code = "WA"
+city = "Seattle"
+latitude = 47.60621
+longitude = -122.33207
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3200::/56"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Nghệ An Province"
+region.code = "22"
+city = "Vinh"
+latitude = 18.67337
+longitude = 105.69232
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3300::/56"
+anycast = false
+country.name = "The Netherlands"
+country.code = "NL"
+region.name = "Flevoland"
+region.code = "FL"
+city = "Lelystad"
+latitude = 52.50833
+longitude = 5.475
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3400::/56"
+anycast = false
+country.name = "Sweden"
+country.code = "SE"
+region.name = "Stockholm County"
+region.code = "AB"
+city = "Stockholm"
+latitude = 59.32938
+longitude = 18.06871
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3500::/56"
+anycast = false
+country.name = "Bulgaria"
+country.code = "BG"
+region.name = "Sofia-Capital"
+region.code = "22"
+city = "Sofia"
+latitude = 42.69751
+longitude = 23.32415
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3600::/56"
+anycast = false
+country.name = "France"
+country.code = "FR"
+region.name = "Île-de-France"
+region.code = "IDF"
+city = "Paris"
+latitude = 48.8534
+longitude = 2.3486
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3700::/56"
+anycast = false
+country.name = "Nigeria"
+country.code = "NG"
+region.name = "Lagos"
+region.code = "LA"
+city = "Lagos"
+latitude = 6.45407
+longitude = 3.39467
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3800::/56"
+anycast = false
+country.name = "Türkiye"
+country.code = "TR"
+region.name = "Istanbul"
+region.code = "34"
+city = "Istanbul"
+latitude = 41.01384
+longitude = 28.94966
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3900::/56"
+anycast = false
+country.name = "Finland"
+country.code = "FI"
+region.name = "Uusimaa"
+region.code = "18"
+city = "Helsinki"
+latitude = 60.16952
+longitude = 24.93545
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3a00::/56"
+anycast = false
+country.name = "South Africa"
+country.code = "ZA"
+region.name = "Gauteng"
+region.code = "GP"
+city = "Johannesburg"
+latitude = -26.20227
+longitude = 28.04363
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3b00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Arizona"
+region.code = "AZ"
+city = "Phoenix"
+latitude = 33.44838
+longitude = -112.07404
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3c00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Texas"
+region.code = "TX"
+city = "Houston"
+latitude = 29.76328
+longitude = -95.36327
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3d00::/56"
+anycast = false
+country.name = "The Netherlands"
+country.code = "NL"
+region.name = "North Holland"
+region.code = "NH"
+city = "Amsterdam"
+latitude = 52.37403
+longitude = 4.88969
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3e00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Nevada"
+region.code = "NV"
+city = "Las Vegas"
+latitude = 36.17497
+longitude = -115.13722
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:3f00::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Michigan"
+region.code = "MI"
+city = "Detroit"
+latitude = 42.33143
+longitude = -83.04575
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4000::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4100::/56"
+anycast = false
+country.name = "Ireland"
+country.code = "IE"
+region.name = "Leinster"
+region.code = "L"
+city = "Dublin"
+latitude = 53.33306
+longitude = -6.24889
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4200::/56"
+anycast = false
+country.name = "Spain"
+country.code = "ES"
+region.name = "Madrid"
+region.code = "MD"
+city = "Madrid"
+latitude = 40.4165
+longitude = -3.70256
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4300::/56"
+anycast = false
+country.name = "Iceland"
+country.code = "IS"
+region.name = "Capital Region"
+region.code = "1"
+city = "Reykjavík"
+latitude = 64.13548
+longitude = -21.89541
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4400::/56"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Saxony"
+region.code = "SN"
+city = "Falkenstein"
+latitude = 47.94063
+longitude = 8.01702
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4500::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4600::/56"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Osaka"
+region.code = "27"
+city = "Osaka"
+latitude = 35.95
+longitude = 137.26667
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4700::/56"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6895
+longitude = 139.69171
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4800::/56"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Hawaii"
+region.code = "HI"
+city = "Honolulu"
+latitude = 21.30694
+longitude = -157.85833
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4900::/56"
+anycast = false
+country.name = "Lithuania"
+country.code = "LT"
+region.name = "Siauliai"
+region.code = "SA"
+city = "Šiauliai"
+latitude = 55.93333
+longitude = 23.31667
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4a00::/56"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Osaka"
+region.code = "27"
+city = "Osaka"
+latitude = 35.95
+longitude = 137.26667
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4b00::/56"
+anycast = false
+country.name = "South Korea"
+country.code = "KR"
+region.name = "Seoul"
+region.code = "11"
+city = "Seoul"
+latitude = 37.58333
+longitude = 127.0
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4c00::/56"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.27832
+longitude = 114.17469
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4d00::/56"
+anycast = false
+country.name = "Switzerland"
+country.code = "CH"
+region.name = "Zurich"
+region.code = "ZH"
+city = "Zürich"
+latitude = 47.36667
+longitude = 8.55
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4e00::/56"
+anycast = false
+country.name = "Morocco"
+country.code = "MA"
+region.name = "Rabat-Salé-Kénitra"
+region.code = "04"
+city = "Rabat"
+latitude = 33.99111
+longitude = -6.84006
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:4f00::/56"
+anycast = false
+country.name = "Canada"
+country.code = "CA"
+region.name = "Quebec"
+region.code = "QC"
+city = "Beauharnois"
+latitude = 45.31341
+longitude = -73.8725
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:5000::/56"
+anycast = false
+country.name = "New Zealand"
+country.code = "NZ"
+region.name = "Auckland"
+region.code = "AUK"
+city = "Auckland"
+latitude = -36.85582
+longitude = 174.74304
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd99:727:bad0:5100::/56"
+anycast = false
+country.name = "Guam"
+country.code = "GU"
+latitude = 13.47861
+longitude = 144.81834
+accuracy_radius = 50
 

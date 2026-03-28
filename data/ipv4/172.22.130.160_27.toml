@@ -1,212 +1,259 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.22.130.160/27]
-source="DN42"
+[Master]
+CIDR = "172.22.130.160/27"
+fallback_to_master = false
+source = "DN42"
 
-[172.22.130.160/32]
-country="Vietnam"
-country_code="VN"
-region="Ho Chi Minh"
-region_code="SG"
-city="Ho Chi Minh City"
-latitude=10.82302
-longitude=106.62965
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.160/32"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Ho Chi Minh"
+region.code = "SG"
+city = "Ho Chi Minh City"
+latitude = 10.82302
+longitude = 106.62965
+accuracy_radius = 50
 
-[172.22.130.161/32]
-country="United States"
-country_code="US"
-region="Utah"
-region_code="UT"
-city="Salt Lake City"
-latitude=40.76078
-longitude=-111.89105
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.161/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Utah"
+region.code = "UT"
+city = "Salt Lake City"
+latitude = 40.76078
+longitude = -111.89105
+accuracy_radius = 50
 
-[172.22.130.162/32]
-country="Malaysia"
-country_code="MY"
-region="Johor"
-region_code="01"
-city="Johor Bahru"
-latitude=1.4655
-longitude=103.7578
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.162/32"
+anycast = false
+country.name = "Malaysia"
+country.code = "MY"
+region.name = "Johor"
+region.code = "01"
+city = "Johor Bahru"
+latitude = 1.4655
+longitude = 103.7578
+accuracy_radius = 50
 
-[172.22.130.163/32]
-country="United States"
-country_code="US"
-region="Illinois"
-region_code="IL"
-city="Chicago"
-latitude=41.85003
-longitude=-87.65005
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.163/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Illinois"
+region.code = "IL"
+city = "Chicago"
+latitude = 41.85003
+longitude = -87.65005
+accuracy_radius = 50
 
-[172.22.130.164/32]
-country="Vietnam"
-country_code="VN"
-region="Hanoi"
-region_code="HN"
-city="Hanoi"
-latitude=21.0
-longitude=105.75
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.164/32"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Hanoi"
+region.code = "HN"
+city = "Hanoi"
+latitude = 21.0
+longitude = 105.75
+accuracy_radius = 50
 
-[172.22.130.165/32]
-country="Vietnam"
-country_code="VN"
-region="Ho Chi Minh"
-region_code="SG"
-city="Ho Chi Minh City"
-latitude=10.82302
-longitude=106.62965
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.165/32"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Ho Chi Minh"
+region.code = "SG"
+city = "Ho Chi Minh City"
+latitude = 10.82302
+longitude = 106.62965
+accuracy_radius = 50
 
-[172.22.130.166/32]
-country="Germany"
-country_code="DE"
-region="Hesse"
-region_code="HE"
-city="Frankfurt am Main"
-latitude=50.11552
-longitude=8.68417
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.166/32"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt am Main"
+latitude = 50.11552
+longitude = 8.68417
+accuracy_radius = 50
 
-[172.22.130.167/32]
-country="Germany"
-country_code="DE"
-region="Hesse"
-region_code="HE"
-city="Frankfurt am Main"
-latitude=50.11552
-longitude=8.68417
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.167/32"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt am Main"
+latitude = 50.11552
+longitude = 8.68417
+accuracy_radius = 50
 
-[172.22.130.168/32]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.168/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
 
-[172.22.130.169/32]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.169/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
 
-[172.22.130.170/32]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.170/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
 
-[172.22.130.171/32]
-country="Vietnam"
-country_code="VN"
-region="Đồng Nai Province"
-region_code="39"
-city="Trảng Bom"
-latitude=10.95358
-longitude=107.00589
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.171/32"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Đồng Nai Province"
+region.code = "39"
+city = "Trảng Bom"
+latitude = 10.95358
+longitude = 107.00589
+accuracy_radius = 50
 
-[172.22.130.172/32]
-country="Vietnam"
-country_code="VN"
-region="Đồng Nai Province"
-region_code="39"
-city="Trảng Bom"
-latitude=10.95358
-longitude=107.00589
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.172/32"
+anycast = false
+country.name = "Vietnam"
+country.code = "VN"
+region.name = "Đồng Nai Province"
+region.code = "39"
+city = "Trảng Bom"
+latitude = 10.95358
+longitude = 107.00589
+accuracy_radius = 50
 
-[172.22.130.173/32]
-country="Australia"
-country_code="AU"
-region="New South Wales"
-region_code="NSW"
-city="Sydney"
-latitude=-33.86785
-longitude=151.20732
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.173/32"
+anycast = false
+country.name = "Australia"
+country.code = "AU"
+region.name = "New South Wales"
+region.code = "NSW"
+city = "Sydney"
+latitude = -33.86785
+longitude = 151.20732
+accuracy_radius = 50
 
-[172.22.130.184/32]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.184/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
 
-[172.22.130.185/32]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.185/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
 
-[172.22.130.186/32]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.186/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
 
-[172.22.130.187/32]
-country="Russia"
-country_code="RU"
-region="Moscow"
-region_code="MOW"
-city="Moscow"
-latitude=55.75204
-longitude=37.61781
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.187/32"
+anycast = false
+country.name = "Russia"
+country.code = "RU"
+region.name = "Moscow"
+region.code = "MOW"
+city = "Moscow"
+latitude = 55.75204
+longitude = 37.61781
+accuracy_radius = 50
 
-[172.22.130.188/32]
-country="Canada"
-country_code="CA"
-region="Ontario"
-region_code="ON"
-city="Toronto"
-latitude=46.45012
-longitude=-63.382
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.188/32"
+anycast = false
+country.name = "Canada"
+country.code = "CA"
+region.name = "Ontario"
+region.code = "ON"
+city = "Toronto"
+latitude = 46.45012
+longitude = -63.382
+accuracy_radius = 50
 
-[172.22.130.189/32]
-country="United States"
-country_code="US"
-region="Minnesota"
-region_code="MN"
-city="Minneapolis"
-latitude=44.97997
-longitude=-93.26384
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.189/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Minnesota"
+region.code = "MN"
+city = "Minneapolis"
+latitude = 44.97997
+longitude = -93.26384
+accuracy_radius = 50
 
-[172.22.130.190/32]
-country="Singapore"
-country_code="SG"
-latitude=1.28967
-longitude=103.85007
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.130.190/32"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+latitude = 1.28967
+longitude = 103.85007
+accuracy_radius = 50
 

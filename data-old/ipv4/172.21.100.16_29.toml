@@ -1,0 +1,17 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.21.100.16/29]
+country="China"
+country_code="CN"
+source="DN42"
+
+[172.21.100.16/29]
+country="China"
+country_code="CN"
+region="Shaanxi"
+region_code="SN"
+city="Baoji"
+latitude=30.99411
+longitude=90.18183
+accuracy_radius=50
+

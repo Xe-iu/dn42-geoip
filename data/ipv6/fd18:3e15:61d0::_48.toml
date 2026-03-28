@@ -1,51 +1,69 @@
-[fd18:3e15:61d0::/48]
-country =      "China"
-country_code = "CN"
-source =       "DN42"
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fd18:3e15:61d0::1/128]
-country =      "Hong Kong"
-country_code = "HK"
-latitude =      22.396428
-longitude =     114.109497
-accuracy_radius=50
+[Master]
+CIDR = "fd18:3e15:61d0::/48"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[fd18:3e15:61d0::2/128]
-country =      "China"
-country_code = "CN"
-region =       "Jiangsu"
-region_code =  "JS"
-city =         "Nanjing"
-latitude =      32.0615513
-longitude =     118.7915619
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd18:3e15:61d0::1/128"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.396428
+longitude = 114.109497
+accuracy_radius = 50
 
-[fd18:3e15:61d0::3/128]
-country =      "Japan"
-country_code = "JP"
-region =       "Tokyo"
-region_code =  "13"
-city =         "Tokyo"
-latitude =      35.6937632
-longitude =     139.7036319
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd18:3e15:61d0::2/128"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Jiangsu"
+region.code = "JS"
+city = "Nanjing"
+latitude = 32.0615513
+longitude = 118.7915619
+accuracy_radius = 50
 
-[fd18:3e15:61d0::4/128]
-country =      "China"
-country_code = "CN"
-region =       "Anhui"
-region_code =  "AH"
-city =         "Hefei"
-latitude =      31.86119
-longitude =     117.283042
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd18:3e15:61d0::3/128"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6937632
+longitude = 139.7036319
+accuracy_radius = 50
 
-[fd18:3e15:61d0::5/128]
-country =      "United States"
-country_code = "US"
-region =       "California"
-region_code =  "CA"
-city =         "Los Angeles"
-latitude =      24.460981
-longitude =     118.080545
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd18:3e15:61d0::4/128"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Anhui"
+region.code = "AH"
+city = "Hefei"
+latitude = 31.86119
+longitude = 117.283042
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fd18:3e15:61d0::5/128"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 24.460981
+longitude = 118.080545
+accuracy_radius = 50
+

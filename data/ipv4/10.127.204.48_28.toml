@@ -1,22 +1,34 @@
-[10.127.204.48/28]
-country =      "China"
-country_code = "CN"
-source =       "NeoNetwork"
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[10.127.204.49/32]
-country =      "Singapore"
-country_code = "SG"
-city =         "Singapore"
-latitude =      1.3147
-longitude =     103.8454
-accuracy_radius=147
+[Master]
+CIDR = "10.127.204.48/28"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "NeoNetwork"
 
-[10.127.204.52/32]
-country =      "China"
-country_code = "CN"
-region =       "Henan"
-region_code =  "HA"
-city =         "Zhengzhou"
-latitude =      34.8049096
-longitude =     113.300109
-accuracy_radius=170
+[[GeoData]]
+CIDR = "10.127.204.49/32"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+city = "Singapore"
+latitude = 1.3147
+longitude = 103.8454
+accuracy_radius = 147
+
+[[GeoData]]
+CIDR = "10.127.204.52/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Henan"
+region.code = "HA"
+city = "Zhengzhou"
+latitude = 34.8049096
+longitude = 113.300109
+accuracy_radius = 170
+

@@ -1,0 +1,49 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[fdea:a10b:3d3a::/48]
+country="China"
+country_code="CN"
+source="DN42"
+
+[fdea:a10b:3d3a:23::1/64]
+country="Germany"
+country_code="DE"
+latitude=52.52437
+longitude=13.41053
+accuracy_radius=50
+
+[fdea:a10b:3d3a:20::1/64]
+country="Hong Kong"
+country_code="HK"
+latitude=22.27832
+longitude=114.17469
+accuracy_radius=50
+
+[fdea:a10b:3d3a:5::1/64]
+country="Japan"
+country_code="JP"
+latitude=35.95
+longitude=137.26667
+accuracy_radius=50
+
+[fdea:a10b:3d3a:16::1/64]
+country="Singapore"
+country_code="SG"
+latitude=1.28967
+longitude=103.85007
+accuracy_radius=50
+
+[fdea:a10b:3d3a:22::1/64]
+country="United States"
+country_code="US"
+latitude=33.75816
+longitude=-86.75333
+accuracy_radius=50
+
+[fdea:a10b:3d3a:3::1/64]
+country="United States"
+country_code="US"
+latitude=28.46582
+longitude=-99.00003
+accuracy_radius=50
+

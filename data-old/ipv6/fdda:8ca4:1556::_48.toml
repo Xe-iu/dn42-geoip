@@ -1,0 +1,111 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[fdda:8ca4:1556::/48]
+country="China"
+country_code="CN"
+source="DN42"
+
+[fdda:8ca4:1556::/56]
+country="United States"
+country_code="US"
+region="California"
+region_code="CA"
+city="Los Angeles"
+latitude=34.05223
+longitude=-118.24368
+accuracy_radius=50
+
+[fdda:8ca4:1556:1000::/56]
+country="Singapore"
+country_code="SG"
+latitude=1.28967
+longitude=103.85007
+accuracy_radius=50
+
+[fdda:8ca4:1556:2000::/56]
+country="China"
+country_code="CN"
+region="Beijing"
+region_code="BJ"
+city="Beijing"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+
+[fdda:8ca4:1556:3000::/56]
+country="Germany"
+country_code="DE"
+region="Hesse"
+region_code="HE"
+city="Frankfurt"
+latitude=49.68333
+longitude=10.53333
+accuracy_radius=50
+
+[fdda:8ca4:1556:5000::/56]
+country="United States"
+country_code="US"
+region="New York"
+region_code="NY"
+city="New York"
+latitude=43.00035
+longitude=-75.4999
+accuracy_radius=50
+
+[fdda:8ca4:1556:6000::/56]
+country="Japan"
+country_code="JP"
+region="Tokyo"
+region_code="13"
+city="Tokyo"
+latitude=35.6895
+longitude=139.69171
+accuracy_radius=50
+
+[fdda:8ca4:1556:7000::/56]
+country="New Zealand"
+country_code="NZ"
+region="Auckland"
+region_code="AUK"
+city="Auckland"
+latitude=-36.85582
+longitude=174.74304
+accuracy_radius=50
+
+[fdda:8ca4:1556:a000::/56]
+country="Austria"
+country_code="AT"
+region="Vienna"
+region_code="9"
+city="Vienna"
+latitude=48.20849
+longitude=16.37208
+accuracy_radius=50
+
+[fdda:8ca4:1556:b000::/56]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+
+[fdda:8ca4:1556:c000::/56]
+country="The Netherlands"
+country_code="NL"
+region="North Holland"
+region_code="NH"
+city="Amsterdam"
+latitude=52.37403
+longitude=4.88969
+accuracy_radius=50
+
+[fdda:8ca4:1556:d000::/56]
+country="United States"
+country_code="US"
+region="Texas"
+region_code="TX"
+city="Dallas"
+latitude=32.78306
+longitude=-96.80667
+accuracy_radius=50
+

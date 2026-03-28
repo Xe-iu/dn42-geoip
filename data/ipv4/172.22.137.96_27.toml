@@ -1,21 +1,30 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.22.137.96/27]
-country="China"
-country_code="CN"
-source="DN42"
+[Master]
+CIDR = "172.22.137.96/27"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[172.22.137.96/28]
-country="United States"
-country_code="US"
-latitude=38.89511
-longitude=-77.03637
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.137.96/28"
+anycast = false
+country.name = "United States"
+country.code = "US"
+latitude = 38.89511
+longitude = -77.03637
+accuracy_radius = 50
 
-[172.22.137.112/28]
-country="China"
-country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.137.112/28"
+anycast = false
+country.name = "China"
+country.code = "CN"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 

@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"flag"
@@ -20,7 +20,6 @@ var (
 )
 
 func init() {
-	// 命令行参数
 	flag.StringVar(&flagHost, "host", "0.0.0.0", "Server host")
 	flag.IntVar(&flagPort, "port", 8080, "Server port")
 	flag.StringVar(&flagMmdbSource, "mmdb-source", "github", "MMDB source: github or mirror")
@@ -72,11 +71,13 @@ func queryIP(ipStr string) gin.H {
 			"name":   record.City.Names,
 			"postal": record.Postal.Code,
 		},
+		"address":      record.Address,
 		"subdivisions": record.Subdivisions,
 		"location": gin.H{
 			"latitude":        lat,
 			"longitude":       lon,
 			"accuracy_radius": int(record.Location.AccuracyRadius),
+			"time_zone":       record.Location.TimeZone,
 		},
 	}
 }
@@ -86,15 +87,14 @@ func respond(c *gin.Context, result gin.H) {
 	isCurl := strings.Contains(strings.ToLower(ua), "curl")
 
 	outputFormat := "json"
-
 	inputFormat, ok := c.GetQuery("f")
 	if (ok && inputFormat == "text") || (!ok && isCurl) {
 		outputFormat = "text"
 	}
 
 	if outputFormat == "text" {
-		if err, ok := result["error"]; ok {
-			c.String(http.StatusBadRequest, "Error: %s\n", err)
+		if errVal, ok := result["error"]; ok {
+			c.String(http.StatusBadRequest, "Error: %s\n", errVal)
 			return
 		}
 
@@ -107,7 +107,9 @@ Registered Country : %v (%s)
 Continent          : %v (%s)
 City               : %v
 Postal Code        : %s
-Coordinates        : %.4f, %.4f (±%dkm)
+Coordinates        : %.4f, %.4f (+/-%dkm)
+Time Zone          : %v
+Address            : %v
 `,
 			result["ip"],
 			result["country"].(gin.H)["name"],
@@ -121,30 +123,32 @@ Coordinates        : %.4f, %.4f (±%dkm)
 			loc["latitude"].(float64),
 			loc["longitude"].(float64),
 			loc["accuracy_radius"].(int),
+			loc["time_zone"],
+			result["address"],
 		)
+		return
+	}
+
+	if _, ok := result["error"]; ok {
+		c.JSON(http.StatusBadRequest, result)
 	} else {
-		if _, ok := result["error"]; ok {
-			c.JSON(http.StatusBadRequest, result)
-		} else {
-			c.JSON(http.StatusOK, result)
-		}
+		c.JSON(http.StatusOK, result)
 	}
 }
 
 func main() {
-	// 捕获退出信号
 	stopCh := make(chan struct{})
 	sigCh := make(chan os.Signal, 1)
 	signal.Notify(sigCh, syscall.SIGINT, syscall.SIGTERM)
 
-	sourceUrl := mmdbURL
+	sourceURL := mmdbURL
 	if flagMmdbSource == "mirror" {
-		sourceUrl = mmdbMirrorURL
+		sourceURL = mmdbMirrorURL
 	}
 
 	if _, err := os.Stat(localFilePath); os.IsNotExist(err) {
-		fmt.Printf("下载 MMDB 文件: %s\n", sourceUrl)
-		if err := downloadMMDB(sourceUrl, localFilePath); err != nil {
+		fmt.Printf("Downloading MMDB: %s\n", sourceURL)
+		if err := downloadMMDB(sourceURL, localFilePath); err != nil {
 			panic(err)
 		}
 	}
@@ -155,10 +159,8 @@ func main() {
 	}
 	currentReader.Store(r)
 
-	// 后台更新
-	go updateLoop(sourceUrl, stopCh)
+	go updateLoop(sourceURL, stopCh)
 
-	// Gin 服务器
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	router.Use(func(c *gin.Context) {
@@ -167,14 +169,12 @@ func main() {
 		c.Next()
 	})
 
-	// 根路径：返回客户端 IP 信息
 	router.GET("/", func(c *gin.Context) {
 		clientIP := c.ClientIP()
 		result := queryIP(clientIP)
 		respond(c, result)
 	})
 
-	// 查询指定 IP
 	router.GET("/q", func(c *gin.Context) {
 		ipStr := strings.TrimSpace(c.Query("ip"))
 		if ipStr == "" {
@@ -186,20 +186,19 @@ func main() {
 	})
 
 	serverAddr := fmt.Sprintf("%s:%d", flagHost, flagPort)
-	fmt.Printf("启动服务器: http://%s\n", serverAddr)
+	fmt.Printf("Server started: http://%s\n", serverAddr)
 	go func() {
 		if err := router.Run(serverAddr); err != nil {
 			panic(err)
 		}
 	}()
 
-	// 等待退出
 	<-sigCh
-	fmt.Println("收到退出信号，关闭 reader 并退出")
+	fmt.Println("Shutdown signal received, closing reader")
 	close(stopCh)
 
 	finalReader := getReader()
 	if finalReader != nil {
-		finalReader.Close()
+		_ = finalReader.Close()
 	}
 }

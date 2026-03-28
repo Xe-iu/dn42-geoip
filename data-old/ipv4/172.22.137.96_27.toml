@@ -1,0 +1,21 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.22.137.96/27]
+country="China"
+country_code="CN"
+source="DN42"
+
+[172.22.137.96/28]
+country="United States"
+country_code="US"
+latitude=38.89511
+longitude=-77.03637
+accuracy_radius=50
+
+[172.22.137.112/28]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+

@@ -1,138 +1,171 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.20.143.16/28]
-country="China"
-country_code="CN"
-source="DN42"
+[Master]
+CIDR = "172.20.143.16/28"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[172.20.143.17/32]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.17/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
 
-[172.20.143.18/32]
-country="Germany"
-country_code="DE"
-region="Hesse"
-region_code="HE"
-city="Frankfurt"
-latitude=49.68333
-longitude=10.53333
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.18/32"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt"
+latitude = 49.68333
+longitude = 10.53333
+accuracy_radius = 50
 
-[172.20.143.19/32]
-country="Germany"
-country_code="DE"
-region="Hesse"
-region_code="HE"
-city="Frankfurt"
-latitude=49.68333
-longitude=10.53333
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.19/32"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt"
+latitude = 49.68333
+longitude = 10.53333
+accuracy_radius = 50
 
-[172.20.143.20/32]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.20/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
 
-[172.20.143.21/32]
-country="China"
-country_code="CN"
-region="Beijing"
-region_code="BJ"
-city="Beijing"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.21/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Beijing"
+region.code = "BJ"
+city = "Beijing"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 
-[172.20.143.22/32]
-country="China"
-country_code="CN"
-region="Beijing"
-region_code="BJ"
-city="Beijing"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.22/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Beijing"
+region.code = "BJ"
+city = "Beijing"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 
-[172.20.143.24/32]
-country="China"
-country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.24/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 
-[172.20.143.25/32]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.25/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
 
-[172.20.143.26/32]
-country="Germany"
-country_code="DE"
-region="Hesse"
-region_code="HE"
-city="Frankfurt"
-latitude=49.68333
-longitude=10.53333
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.26/32"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt"
+latitude = 49.68333
+longitude = 10.53333
+accuracy_radius = 50
 
-[172.20.143.27/32]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.27/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
 
-[172.20.143.28/32]
-country="United States"
-country_code="US"
-region="New York"
-region_code="NY"
-city="New York"
-latitude=43.00035
-longitude=-75.4999
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.28/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "New York"
+region.code = "NY"
+city = "New York"
+latitude = 43.00035
+longitude = -75.4999
+accuracy_radius = 50
 
-[172.20.143.29/32]
-country="Japan"
-country_code="JP"
-region="Tokyo"
-region_code="13"
-city="Tokyo"
-latitude=35.6895
-longitude=139.69171
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.29/32"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6895
+longitude = 139.69171
+accuracy_radius = 50
 
-[172.20.143.30/32]
-country="Singapore"
-country_code="SG"
-latitude=1.28967
-longitude=103.85007
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.30/32"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+latitude = 1.28967
+longitude = 103.85007
+accuracy_radius = 50
 
-[172.20.143.31/32]
-country="China"
-country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.143.31/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 

@@ -1,52 +1,67 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.22.123.0/27]
-source="DN42"
+[Master]
+CIDR = "172.22.123.0/27"
+fallback_to_master = false
+source = "DN42"
 
-[172.22.123.0/32]
-country="Switzerland"
-country_code="CH"
-region="Zurich"
-region_code="ZH"
-city="Zürich"
-latitude=47.36667
-longitude=8.55
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.123.0/32"
+anycast = false
+country.name = "Switzerland"
+country.code = "CH"
+region.name = "Zurich"
+region.code = "ZH"
+city = "Zürich"
+latitude = 47.36667
+longitude = 8.55
+accuracy_radius = 50
 
-[172.22.123.1/32]
-country="Morocco"
-country_code="MA"
-region="Rabat-Salé-Kénitra"
-region_code="04"
-city="Rabat"
-latitude=33.99111
-longitude=-6.84006
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.123.1/32"
+anycast = false
+country.name = "Morocco"
+country.code = "MA"
+region.name = "Rabat-Salé-Kénitra"
+region.code = "04"
+city = "Rabat"
+latitude = 33.99111
+longitude = -6.84006
+accuracy_radius = 50
 
-[172.22.123.2/32]
-country="Canada"
-country_code="CA"
-region="Quebec"
-region_code="QC"
-city="Beauharnois"
-latitude=45.31341
-longitude=-73.8725
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.123.2/32"
+anycast = false
+country.name = "Canada"
+country.code = "CA"
+region.name = "Quebec"
+region.code = "QC"
+city = "Beauharnois"
+latitude = 45.31341
+longitude = -73.8725
+accuracy_radius = 50
 
-[172.22.123.3/32]
-country="New Zealand"
-country_code="NZ"
-region="Auckland"
-region_code="AUK"
-city="Auckland"
-latitude=-36.85582
-longitude=174.74304
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.123.3/32"
+anycast = false
+country.name = "New Zealand"
+country.code = "NZ"
+region.name = "Auckland"
+region.code = "AUK"
+city = "Auckland"
+latitude = -36.85582
+longitude = 174.74304
+accuracy_radius = 50
 
-[172.22.123.4/32]
-country="Guam"
-country_code="GU"
-latitude=13.47861
-longitude=144.81834
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.123.4/32"
+anycast = false
+country.name = "Guam"
+country.code = "GU"
+latitude = 13.47861
+longitude = 144.81834
+accuracy_radius = 50
 

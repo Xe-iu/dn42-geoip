@@ -1,84 +1,105 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fd7d:3858:42d::/48]
-country="China"
-country_code="CN"
-source="DN42"
+[Master]
+CIDR = "fd7d:3858:42d::/48"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[fd7d:3858:42d::2/128]
-country="Japan"
-country_code="JP"
-region="Tokyo"
-region_code="13"
-city="Tokyo"
-latitude=35.6895
-longitude=139.69171
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d::2/128"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6895
+longitude = 139.69171
+accuracy_radius = 50
 
-[fd7d:3858:42d::3/128]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="San Jose"
-latitude=38.06659
-longitude=-122.56331
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d::3/128"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "San Jose"
+latitude = 38.06659
+longitude = -122.56331
+accuracy_radius = 50
 
-[fd7d:3858:42d::1/128]
-country="China"
-country_code="CN"
-region="Shanghai"
-region_code="SH"
-city="Shanghai"
-latitude=31.22222
-longitude=121.45806
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d::1/128"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shanghai"
+region.code = "SH"
+city = "Shanghai"
+latitude = 31.22222
+longitude = 121.45806
+accuracy_radius = 50
 
-[fd7d:3858:42d::4/128]
-country="Singapore"
-country_code="SG"
-latitude=1.28967
-longitude=103.85007
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d::4/128"
+anycast = false
+country.name = "Singapore"
+country.code = "SG"
+latitude = 1.28967
+longitude = 103.85007
+accuracy_radius = 50
 
-[fd7d:3858:42d::5/128]
-country="China"
-country_code="CN"
-region="Zhejiang"
-region_code="ZJ"
-city="Ningbo"
-latitude=29.87819
-longitude=121.54945
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d::5/128"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Zhejiang"
+region.code = "ZJ"
+city = "Ningbo"
+latitude = 29.87819
+longitude = 121.54945
+accuracy_radius = 50
 
-[fd7d:3858:42d::6/128]
-country="China"
-country_code="CN"
-region="Sichuan"
-region_code="SC"
-city="Chengdu"
-latitude=30.66667
-longitude=104.06667
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d::6/128"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Sichuan"
+region.code = "SC"
+city = "Chengdu"
+latitude = 30.66667
+longitude = 104.06667
+accuracy_radius = 50
 
-[fd7d:3858:42d:1::1/128]
-country="China"
-country_code="CN"
-region="Shanghai"
-region_code="SH"
-city="Shanghai"
-latitude=31.22222
-longitude=121.45806
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d:1::1/128"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shanghai"
+region.code = "SH"
+city = "Shanghai"
+latitude = 31.22222
+longitude = 121.45806
+accuracy_radius = 50
 
-[fd7d:3858:42d:1::2/128]
-country="China"
-country_code="CN"
-region="Shanghai"
-region_code="SH"
-city="Shanghai"
-latitude=31.22222
-longitude=121.45806
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd7d:3858:42d:1::2/128"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shanghai"
+region.code = "SH"
+city = "Shanghai"
+latitude = 31.22222
+longitude = 121.45806
+accuracy_radius = 50
 

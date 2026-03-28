@@ -1,0 +1,34 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.22.159.64/26]
+country="United States"
+country_code="US"
+source="DN42"
+
+[172.22.159.100/32]
+country="United States"
+country_code="US"
+region="Washington"
+region_code="WA"
+city="Seattle"
+latitude=47.60621
+longitude=-122.33207
+accuracy_radius=50
+
+[172.22.159.101/32]
+country="United States"
+country_code="US"
+region="Missouri"
+region_code="MO"
+city="Kansas City"
+latitude=39.09973
+longitude=-94.57857
+accuracy_radius=50
+
+[172.22.159.110/32]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+

@@ -1,48 +1,77 @@
-[172.20.159.0/28]
-country =      "China"
-country_code = "CN"
-source =       "DN42"
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.20.159.1/32]
-country =      "Japan"
-country_code = "JP"
-region =       "Tokyo"
-region_code =  "13"
-city =         "Tokyo"
-latitude =      35.6937632
-longitude =     139.7036319
-accuracy_radius=50
+[Master]
+CIDR = "172.20.159.0/28"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[172.20.159.2/32]
-country =      "Hong Kong"
-country_code = "HK"
-latitude =      22.396428
-longitude =     114.109497
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.159.1/32"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6937632
+longitude = 139.7036319
+accuracy_radius = 50
 
-[172.20.159.3/32]
-country =      "Hong Kong"
-country_code = "HK"
-latitude =      22.396428
-longitude =     114.109497
-accuracy_radius=50
+address.default =      "1"                  # 可选/Optional
+address.de =           "2"                  # 可选/Optional
+address.en =           "3"                  # 可选/Optional
+address.es =           "4"                  # 可选/Optional
+address.fr =           "5"                  # 可选/Optional
+address.ja =           "6"                  # 可选/Optional
+address.pt-BR =        "7"                  # 可选/Optional
+address.ru =           "8"                  # 可选/Optional
+address.zh-hans =      "9"                  # 可选/Optional
+address.zh-hant =      "0"                  # 可选/Optional
 
-[172.20.159.9/32]
-country =      "France"
-country_code = "FR"
-region =       "Hauts-de-France"
-region_code =  "HDF"
-city =         "Roubaix"
-latitude =      50.6913
-longitude =     3.16852
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.159.2/32"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.396428
+longitude = 114.109497
+accuracy_radius = 50
 
-[172.20.159.10/32]
-country =      "United States"
-country_code = "US"
-region =       "Missouri"
-region_code =  "MO"
-city =         "Kansas City"
-latitude =      -94.5784
-longitude =     39.10146
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.20.159.3/32"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.396428
+longitude = 114.109497
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "172.20.159.9/32"
+anycast = false
+country.name = "France"
+country.code = "FR"
+region.name = "Hauts-de-France"
+region.code = "HDF"
+city = "Roubaix"
+latitude = 50.6913
+longitude = 3.16852
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "172.20.159.10/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Missouri"
+region.code = "MO"
+city = "Kansas City"
+latitude = -94.5784
+longitude = 39.10146
+accuracy_radius = 50
+

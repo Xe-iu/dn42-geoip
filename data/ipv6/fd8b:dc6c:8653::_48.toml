@@ -1,17 +1,24 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fd8b:dc6c:8653::/48]
-country="France"
-country_code="FR"
-source="DN42"
+[Master]
+CIDR = "fd8b:dc6c:8653::/48"
+fallback_to_master = true
+country.name = "France"
+country.code = "FR"
+source = "DN42"
 
-[fd8b:dc6c:8653::/48]
-country="France"
-country_code="FR"
-region="Auvergne-Rhône-Alpes"
-region_code="ARA"
-city="Lyon"
-latitude=45.74906
-longitude=4.84789
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fd8b:dc6c:8653::/48"
+anycast = false
+country.name = "France"
+country.code = "FR"
+region.name = "Auvergne-Rhône-Alpes"
+region.code = "ARA"
+city = "Lyon"
+latitude = 45.74906
+longitude = 4.84789
+accuracy_radius = 50
 

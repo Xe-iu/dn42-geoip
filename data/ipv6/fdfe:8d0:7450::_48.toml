@@ -1,5 +1,10 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fdfe:8d0:7450::/48]
-source="DN42"
+[Master]
+CIDR = "fdfe:8d0:7450::/48"
+fallback_to_master = false
+source = "DN42"
 

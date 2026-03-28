@@ -18,12 +18,45 @@ type Names struct {
 	BrazilianPortuguese string `json:"pt-BR,omitzero" maxminddb:"pt-BR"` //nolint:tagliatelle,lll // pt-BR matches MMDB format
 	// Russian localized name
 	Russian string `json:"ru,omitzero"    maxminddb:"ru"`
-	// SimplifiedChinese localized name (zh-CN)
-	SimplifiedChinese string `json:"zh-CN,omitzero" maxminddb:"zh-CN"` //nolint:tagliatelle // zh-CN matches MMDB format
+	// SimplifiedChinese localized name (zh-hans)
+	SimplifiedChinese string `json:"zh-hans,omitzero" maxminddb:"zh-hans"` //nolint:tagliatelle // zh-hans matches MMDB format
+	// TraditionalChinese localized name (zh-hant)
+	TraditionalChinese string `json:"zh-hant,omitzero" maxminddb:"zh-hant"` //nolint:tagliatelle // zh-hant matches MMDB format
+}
+
+// AddressNames contains localized names for address/freeform location text.
+type AddressNames struct {
+	// Default localized text
+	Default string `json:"default,omitzero" maxminddb:"default"`
+	// German localized text
+	German string `json:"de,omitzero" maxminddb:"de"`
+	// English localized text
+	English string `json:"en,omitzero" maxminddb:"en"`
+	// Spanish localized text
+	Spanish string `json:"es,omitzero" maxminddb:"es"`
+	// French localized text
+	French string `json:"fr,omitzero" maxminddb:"fr"`
+	// Japanese localized text
+	Japanese string `json:"ja,omitzero" maxminddb:"ja"`
+	// BrazilianPortuguese localized text (pt-BR)
+	BrazilianPortuguese string `json:"pt-BR,omitzero" maxminddb:"pt-BR"` //nolint:tagliatelle,lll // pt-BR matches MMDB format
+	// Russian localized text
+	Russian string `json:"ru,omitzero" maxminddb:"ru"`
+	// SimplifiedChinese localized text (zh-hans)
+	SimplifiedChinese string `json:"zh-hans,omitzero" maxminddb:"zh-hans"` //nolint:tagliatelle // zh-hans matches MMDB format
+	// TraditionalChinese localized text (zh-hant)
+	TraditionalChinese string `json:"zh-hant,omitzero" maxminddb:"zh-hant"` //nolint:tagliatelle // zh-hant matches MMDB format
+}
+
+// AddressRecord contains address names for City/Enterprise database records.
+type AddressRecord struct {
+	Names AddressNames `json:"names,omitzero" maxminddb:"names"`
 }
 
 var (
 	zeroNames                   Names
+	zeroAddressNames            AddressNames
+	zeroAddressRecord           AddressRecord
 	zeroContinent               Continent
 	zeroLocation                Location
 	zeroRepresentedCountry      RepresentedCountry
@@ -40,6 +73,16 @@ var (
 // HasData returns true if the Names struct has any localized names.
 func (n Names) HasData() bool {
 	return n != zeroNames
+}
+
+// HasData returns true if the AddressNames struct has any localized values.
+func (a AddressNames) HasData() bool {
+	return a != zeroAddressNames
+}
+
+// HasData returns true if the AddressRecord has any data.
+func (a AddressRecord) HasData() bool {
+	return a != zeroAddressRecord
 }
 
 // Common types used across multiple database records
@@ -373,6 +416,8 @@ type Enterprise struct {
 	// Location contains data for the location record associated with the IP
 	// address
 	Location Location `json:"location,omitzero"            maxminddb:"location"`
+	// Address contains optional freeform address names.
+	Address []AddressRecord `json:"address,omitzero"             maxminddb:"address"`
 	// Traits contains various traits associated with the IP address
 	Traits EnterpriseTraits `json:"traits,omitzero"              maxminddb:"traits"`
 }
@@ -383,12 +428,21 @@ func (e Enterprise) HasData() bool {
 	return e.Continent.HasData() || e.City.HasData() || e.Postal.HasData() ||
 		e.hasSubdivisionsData() || e.RepresentedCountry.HasData() ||
 		e.Country.HasData() || e.RegisteredCountry.HasData() ||
-		e.Traits.HasData() || e.Location.HasData()
+		e.Traits.HasData() || e.Location.HasData() || e.hasAddressData()
 }
 
 func (e Enterprise) hasSubdivisionsData() bool {
 	for _, sub := range e.Subdivisions {
 		if sub.HasData() {
+			return true
+		}
+	}
+	return false
+}
+
+func (e Enterprise) hasAddressData() bool {
+	for _, addr := range e.Address {
+		if addr.HasData() && addr.Names.HasData() {
 			return true
 		}
 	}
@@ -426,6 +480,8 @@ type City struct {
 	// Location contains data for the location record associated with the IP
 	// address
 	Location Location `json:"location,omitzero"            maxminddb:"location"`
+	// Address contains optional freeform address names.
+	Address []AddressRecord `json:"address,omitzero"             maxminddb:"address"`
 }
 
 // HasData returns true if any GeoIP data was found for the IP in the City database.
@@ -433,12 +489,21 @@ type City struct {
 func (c City) HasData() bool {
 	return c.Traits.HasData() || c.Postal.HasData() || c.Continent.HasData() ||
 		c.City.HasData() || c.hasSubdivisionsData() || c.RepresentedCountry.HasData() ||
-		c.Country.HasData() || c.RegisteredCountry.HasData() || c.Location.HasData()
+		c.Country.HasData() || c.RegisteredCountry.HasData() || c.Location.HasData() || c.hasAddressData()
 }
 
 func (c City) hasSubdivisionsData() bool {
 	for _, sub := range c.Subdivisions {
 		if sub.HasData() {
+			return true
+		}
+	}
+	return false
+}
+
+func (c City) hasAddressData() bool {
+	for _, addr := range c.Address {
+		if addr.HasData() && addr.Names.HasData() {
 			return true
 		}
 	}

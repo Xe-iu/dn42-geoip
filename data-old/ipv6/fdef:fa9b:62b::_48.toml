@@ -1,0 +1,34 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[fdef:fa9b:62b::/48]
+country="United States"
+country_code="US"
+source="DN42"
+
+[fdef:fa9b:62b:f100::/64]
+country="United States"
+country_code="US"
+region="Washington"
+region_code="WA"
+city="Seattle"
+latitude=47.60621
+longitude=-122.33207
+accuracy_radius=50
+
+[fdef:fa9b:62b:f101::/64]
+country="United States"
+country_code="US"
+region="Missouri"
+region_code="MO"
+city="Kansas City"
+latitude=39.09973
+longitude=-94.57857
+accuracy_radius=50
+
+[fdef:fa9b:62b:f110::/64]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+

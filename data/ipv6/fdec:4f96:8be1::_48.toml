@@ -1,48 +1,63 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fdec:4f96:8be1::/48]
-country="China"
-country_code="CN"
-source="DN42"
+[Master]
+CIDR = "fdec:4f96:8be1::/48"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[fdec:4f96:8be1::/64]
-country="China"
-country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fdec:4f96:8be1::/64"
+anycast = false
+country.name = "China"
+country.code = "CN"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 
-[fdec:4f96:8be1:abcd::/64]
-country="Hong Kong"
-country_code="HK"
-latitude=22.27832
-longitude=114.17469
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fdec:4f96:8be1:abcd::/64"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.27832
+longitude = 114.17469
+accuracy_radius = 50
 
-[fdec:4f96:8be1:100::/56]
-country="China"
-country_code="CN"
-region="Beijing"
-region_code="BJ"
-city="Beijing"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fdec:4f96:8be1:100::/56"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Beijing"
+region.code = "BJ"
+city = "Beijing"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 
-[fdec:4f96:8be1:101::/64]
-country="China"
-country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fdec:4f96:8be1:101::/64"
+anycast = false
+country.name = "China"
+country.code = "CN"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 
-[fdec:4f96:8be1:102::/64]
-country="China"
-country_code="CN"
-region="Heilongjiang"
-region_code="HL"
-city="Suihua"
-latitude=46.64814
-longitude=126.96656
-accuracy_radius=50
+[[GeoData]]
+CIDR = "fdec:4f96:8be1:102::/64"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Heilongjiang"
+region.code = "HL"
+city = "Suihua"
+latitude = 46.64814
+longitude = 126.96656
+accuracy_radius = 50
 

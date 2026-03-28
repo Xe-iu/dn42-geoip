@@ -1,0 +1,109 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[fdbc:f9dc:67ad::/48]
+country="China"
+country_code="CN"
+source="DN42"
+
+[fdbc:f9dc:67ad::1/128]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+
+[fdbc:f9dc:67ad:1::/64]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+
+[fdbc:f9dc:67ad::2/128]
+country="Switzerland"
+country_code="CH"
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=50
+
+[fdbc:f9dc:67ad:2::/64]
+country="Switzerland"
+country_code="CH"
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=50
+
+[fdbc:f9dc:67ad::3/128]
+country="United States"
+country_code="US"
+latitude=28.46582
+longitude=-99.00003
+accuracy_radius=50
+
+[fdbc:f9dc:67ad:3::/64]
+country="United States"
+country_code="US"
+latitude=28.46582
+longitude=-99.00003
+accuracy_radius=50
+
+[fdbc:f9dc:67ad::18/128]
+country="United States"
+country_code="US"
+region="New York"
+region_code="NY"
+city="New York City"
+latitude=40.71427
+longitude=-74.00597
+accuracy_radius=50
+
+[fdbc:f9dc:67ad:18::/64]
+country="United States"
+country_code="US"
+region="New York"
+region_code="NY"
+city="New York City"
+latitude=40.71427
+longitude=-74.00597
+accuracy_radius=50
+
+[fdbc:f9dc:67ad::5/128]
+country="Japan"
+country_code="JP"
+region="Fukuoka"
+region_code="40"
+city="Tokyo"
+latitude=35.6895
+longitude=139.69171
+accuracy_radius=50
+
+[fdbc:f9dc:67ad:5::/64]
+country="Japan"
+country_code="JP"
+region="Fukuoka"
+region_code="40"
+city="Tokyo"
+latitude=35.6895
+longitude=139.69171
+accuracy_radius=50
+
+[fdbc:f9dc:67ad::8/128]
+country="United States"
+country_code="US"
+region="New York"
+region_code="NY"
+city="New York City"
+latitude=40.71427
+longitude=-74.00597
+accuracy_radius=50
+
+[fdbc:f9dc:67ad:8::/64]
+country="United States"
+country_code="US"
+region="New York"
+region_code="NY"
+city="New York City"
+latitude=40.71427
+longitude=-74.00597
+accuracy_radius=50
+

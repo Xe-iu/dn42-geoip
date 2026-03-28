@@ -1,7 +1,12 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fd6c:243b:40fb::/48]
-country="Spain"
-country_code="ES"
-source="DN42"
+[Master]
+CIDR = "fd6c:243b:40fb::/48"
+fallback_to_master = true
+country.name = "Spain"
+country.code = "ES"
+source = "DN42"
 

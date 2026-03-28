@@ -1,17 +1,24 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.21.100.16/29]
-country="China"
-country_code="CN"
-source="DN42"
+[Master]
+CIDR = "172.21.100.16/29"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[172.21.100.16/29]
-country="China"
-country_code="CN"
-region="Shaanxi"
-region_code="SN"
-city="Baoji"
-latitude=30.99411
-longitude=90.18183
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.16/29"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shaanxi"
+region.code = "SN"
+city = "Baoji"
+latitude = 30.99411
+longitude = 90.18183
+accuracy_radius = 50
 

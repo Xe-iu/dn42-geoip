@@ -1,7 +1,12 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fd59:8:952d::/48]
-country="Ukraine"
-country_code="UA"
-source="DN42"
+[Master]
+CIDR = "fd59:8:952d::/48"
+fallback_to_master = true
+country.name = "Ukraine"
+country.code = "UA"
+source = "DN42"
 

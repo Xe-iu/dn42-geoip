@@ -1,0 +1,38 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.22.76.184/29]
+country="China"
+country_code="CN"
+source="DN42"
+
+[172.22.76.186/32]
+country="China"
+country_code="CN"
+latitude=39.9075
+longitude=116.39723
+accuracy_radius=50
+
+[172.22.76.187/32]
+country="Switzerland"
+country_code="CH"
+latitude=46.94809
+longitude=7.44744
+accuracy_radius=50
+
+[172.22.76.185/32]
+country="United States"
+country_code="US"
+latitude=28.46582
+longitude=-99.00003
+accuracy_radius=50
+
+[172.22.76.190/32]
+country="United States"
+country_code="US"
+region="New York"
+region_code="NY"
+city="New York City"
+latitude=40.71427
+longitude=-74.00597
+accuracy_radius=50
+

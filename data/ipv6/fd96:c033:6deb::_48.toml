@@ -1,14 +1,24 @@
-[fd96:c033:6deb::/48]
-country =      "Spain"
-country_code = "ES"
-source =       "DN42"
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fd96:c033:6deb::/48]
-country =      "Spain"
-country_code = "ES"
-region =       "Madrid"
-region_code =  "MAD"
-city =         "Madrid"
-latitude =     40.4733
-longitude =    -3.7306
-accuracy_radius=500
+[Master]
+CIDR = "fd96:c033:6deb::/48"
+fallback_to_master = true
+country.name = "Spain"
+country.code = "ES"
+source = "DN42"
+
+[[GeoData]]
+CIDR = "fd96:c033:6deb::/48"
+anycast = false
+country.name = "Spain"
+country.code = "ES"
+region.name = "Madrid"
+region.code = "MAD"
+city = "Madrid"
+latitude = 40.4733
+longitude = -3.7306
+accuracy_radius = 500
+

@@ -1,165 +1,204 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.21.100.128/25]
-country="China"
-country_code="CN"
-source="DN42"
+[Master]
+CIDR = "172.21.100.128/25"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
 
-[172.21.100.186/32]
-country="China"
-country_code="CN"
-region="Shaanxi"
-region_code="SN"
-city="Baoji"
-latitude=30.99411
-longitude=90.18183
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.186/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shaanxi"
+region.code = "SN"
+city = "Baoji"
+latitude = 30.99411
+longitude = 90.18183
+accuracy_radius = 50
 
-[172.21.100.188/32]
-country="China"
-country_code="CN"
-region="Shanghai"
-region_code="SH"
-city="Shanghai"
-latitude=31.22222
-longitude=121.45806
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.188/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shanghai"
+region.code = "SH"
+city = "Shanghai"
+latitude = 31.22222
+longitude = 121.45806
+accuracy_radius = 50
 
-[172.21.100.189/32]
-country="China"
-country_code="CN"
-region="Guangdong"
-region_code="GD"
-city="Guangzhou"
-latitude=23.11667
-longitude=113.25
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.189/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Guangdong"
+region.code = "GD"
+city = "Guangzhou"
+latitude = 23.11667
+longitude = 113.25
+accuracy_radius = 50
 
-[172.21.100.190/32]
-country="Japan"
-country_code="JP"
-region="Tokyo"
-region_code="13"
-city="Tokyo"
-latitude=35.6895
-longitude=139.69171
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.190/32"
+anycast = false
+country.name = "Japan"
+country.code = "JP"
+region.name = "Tokyo"
+region.code = "13"
+city = "Tokyo"
+latitude = 35.6895
+longitude = 139.69171
+accuracy_radius = 50
 
-[172.21.100.191/32]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="San Jose"
-latitude=38.06659
-longitude=-122.56331
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.191/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "San Jose"
+latitude = 38.06659
+longitude = -122.56331
+accuracy_radius = 50
 
-[172.21.100.192/32]
-country="Hong Kong"
-country_code="HK"
-latitude=22.27832
-longitude=114.17469
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.192/32"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.27832
+longitude = 114.17469
+accuracy_radius = 50
 
-[172.21.100.193/32]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.193/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
 
-[172.21.100.194/32]
-country="The Netherlands"
-country_code="NL"
-region="North Holland"
-region_code="NH"
-city="Amsterdam"
-latitude=52.37403
-longitude=4.88969
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.194/32"
+anycast = false
+country.name = "The Netherlands"
+country.code = "NL"
+region.name = "North Holland"
+region.code = "NH"
+city = "Amsterdam"
+latitude = 52.37403
+longitude = 4.88969
+accuracy_radius = 50
 
-[172.21.100.199/32]
-country="Taiwan"
-country_code="TW"
-region="Taipei City"
-region_code="TPE"
-city="Taipei"
-latitude=25.05306
-longitude=121.52639
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.199/32"
+anycast = false
+country.name = "Taiwan"
+country.code = "TW"
+region.name = "Taipei City"
+region.code = "TPE"
+city = "Taipei"
+latitude = 25.05306
+longitude = 121.52639
+accuracy_radius = 50
 
-[172.21.100.200/32]
-country="Hong Kong"
-country_code="HK"
-latitude=22.27832
-longitude=114.17469
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.200/32"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.27832
+longitude = 114.17469
+accuracy_radius = 50
 
-[172.21.100.128/29]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.128/29"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
 
-[172.21.100.136/29]
-country="China"
-country_code="CN"
-region="Shanghai"
-region_code="SH"
-city="Shanghai"
-latitude=31.22222
-longitude=121.45806
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.136/29"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shanghai"
+region.code = "SH"
+city = "Shanghai"
+latitude = 31.22222
+longitude = 121.45806
+accuracy_radius = 50
 
-[172.21.100.144/29]
-country="Hong Kong"
-country_code="HK"
-latitude=22.27832
-longitude=114.17469
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.144/29"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.27832
+longitude = 114.17469
+accuracy_radius = 50
 
-[172.21.100.152/29]
-country="China"
-country_code="CN"
-region="Shaanxi"
-region_code="SN"
-city="Baoji"
-latitude=30.99411
-longitude=90.18183
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.152/29"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shaanxi"
+region.code = "SN"
+city = "Baoji"
+latitude = 30.99411
+longitude = 90.18183
+accuracy_radius = 50
 
-[172.21.100.160/29]
-country="China"
-country_code="CN"
-region="Shaanxi"
-region_code="SN"
-city="Baoji"
-latitude=30.99411
-longitude=90.18183
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.160/29"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shaanxi"
+region.code = "SN"
+city = "Baoji"
+latitude = 30.99411
+longitude = 90.18183
+accuracy_radius = 50
 
-[172.21.100.251/32]
-country="Hong Kong"
-country_code="HK"
-latitude=22.27832
-longitude=114.17469
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.251/32"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
+latitude = 22.27832
+longitude = 114.17469
+accuracy_radius = 50
 
-[172.21.100.252/32]
-country="United States"
-country_code="US"
-region="California"
-region_code="CA"
-city="Los Angeles"
-latitude=34.05223
-longitude=-118.24368
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.21.100.252/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.05223
+longitude = -118.24368
+accuracy_radius = 50
 

@@ -1,0 +1,27 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.22.76.96/27]
+country="China"
+country_code="CN"
+source="DN42"
+
+[172.22.76.117/32]
+country="United States"
+country_code="US"
+region="New York"
+region_code="NY"
+city="New York City"
+latitude=40.71427
+longitude=-74.00597
+accuracy_radius=50
+
+[172.22.76.123/32]
+country="Japan"
+country_code="JP"
+region="Fukuoka"
+region_code="40"
+city="Tokyo"
+latitude=35.6895
+longitude=139.69171
+accuracy_radius=50
+

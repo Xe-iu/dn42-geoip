@@ -1,21 +1,33 @@
-[fdee:9bff:b001::/48]
-country =      "China"
-country_code = "CN"
-source =       "DN42"
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T17:48:07Z
 
-[fdee:9bff:b001::1/128]
-country = "Hong Kong"
-country_code = "HK"
+[Master]
+CIDR = "fdee:9bff:b001::/48"
+fallback_to_master = true
+country.name = "China"
+country.code = "CN"
+source = "DN42"
+
+[[GeoData]]
+CIDR = "fdee:9bff:b001::1/128"
+anycast = false
+country.name = "Hong Kong"
+country.code = "HK"
 latitude = 22.28420
 longitude = 114.17590
 accuracy_radius = 50
 
-[fdee:9bff:b001:1::/64]
-country = "China"
-country_code = "CN"
-region = "Shanxi"
-region_code = "SX"
+[[GeoData]]
+CIDR = "fdee:9bff:b001:1::/64"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shanxi"
+region.code = "SX"
 city = "Taiyuan"
 latitude = 37.86030
 longitude = 112.58790
 accuracy_radius = 50
+

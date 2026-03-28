@@ -1,0 +1,17 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[172.20.18.240/28]
+country="France"
+country_code="FR"
+source="DN42"
+
+[172.20.18.240/28]
+country="France"
+country_code="FR"
+region="Auvergne-Rhône-Alpes"
+region_code="ARA"
+city="Lyon"
+latitude=45.74906
+longitude=4.84789
+accuracy_radius=50
+

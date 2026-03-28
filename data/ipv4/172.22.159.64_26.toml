@@ -1,34 +1,45 @@
-# Automatically generated from Geofeed, DO NOT EDIT
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T17:47:58Z
 
-[172.22.159.64/26]
-country="United States"
-country_code="US"
-source="DN42"
+[Master]
+CIDR = "172.22.159.64/26"
+fallback_to_master = true
+country.name = "United States"
+country.code = "US"
+source = "DN42"
 
-[172.22.159.100/32]
-country="United States"
-country_code="US"
-region="Washington"
-region_code="WA"
-city="Seattle"
-latitude=47.60621
-longitude=-122.33207
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.159.100/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Washington"
+region.code = "WA"
+city = "Seattle"
+latitude = 47.60621
+longitude = -122.33207
+accuracy_radius = 50
 
-[172.22.159.101/32]
-country="United States"
-country_code="US"
-region="Missouri"
-region_code="MO"
-city="Kansas City"
-latitude=39.09973
-longitude=-94.57857
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.159.101/32"
+anycast = false
+country.name = "United States"
+country.code = "US"
+region.name = "Missouri"
+region.code = "MO"
+city = "Kansas City"
+latitude = 39.09973
+longitude = -94.57857
+accuracy_radius = 50
 
-[172.22.159.110/32]
-country="China"
-country_code="CN"
-latitude=39.9075
-longitude=116.39723
-accuracy_radius=50
+[[GeoData]]
+CIDR = "172.22.159.110/32"
+anycast = false
+country.name = "China"
+country.code = "CN"
+latitude = 39.9075
+longitude = 116.39723
+accuracy_radius = 50
 

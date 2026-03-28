@@ -1,0 +1,17 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[fd8b:dc6c:8653::/48]
+country="France"
+country_code="FR"
+source="DN42"
+
+[fd8b:dc6c:8653::/48]
+country="France"
+country_code="FR"
+region="Auvergne-Rhône-Alpes"
+region_code="ARA"
+city="Lyon"
+latitude=45.74906
+longitude=4.84789
+accuracy_radius=50
+
