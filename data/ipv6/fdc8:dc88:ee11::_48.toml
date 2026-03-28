@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:03Z
 
 [Master]
 CIDR = "fdc8:dc88:ee11::/48"
@@ -75,6 +77,7 @@ CIDR = "fdc8:dc88:ee11:192::1/128"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -94,7 +97,7 @@ accuracy_radius = 50
 [[GeoData]]
 CIDR = "fdc8:dc88:ee11:194::1/128"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "North Holland"
 region.code = "NH"
@@ -120,6 +123,7 @@ CIDR = "fdc8:dc88:ee11:200::1/128"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -153,6 +157,7 @@ CIDR = "fdc8:dc88:ee11:150::/64"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -186,6 +191,7 @@ CIDR = "fdc8:dc88:ee11:251::/64"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -225,4 +231,3 @@ city = "Baoji"
 latitude = 30.99411
 longitude = 90.18183
 accuracy_radius = 50
-

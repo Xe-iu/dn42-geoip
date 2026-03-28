@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:47Z
 
 [Master]
 CIDR = "fd6f:e34d:80de::/48"
@@ -20,18 +22,6 @@ region.code = "AUK"
 city = "Auckland"
 latitude = -36.85582
 longitude = 174.74304
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fd6f:e34d:80de:1::/64"
-anycast = false
-country.name = "Australia"
-country.code = "AU"
-region.name = "New South Wales"
-region.code = "NSW"
-city = "Alexandria"
-latitude = -19.05709
-longitude = 136.70682
 accuracy_radius = 50
 
 [[GeoData]]
@@ -60,6 +50,7 @@ CIDR = "fd6f:e34d:80de:4::/64"
 anycast = false
 country.name = "United Kingdom"
 country.code = "GB"
+city = "London"
 latitude = 51.50853
 longitude = -0.12574
 accuracy_radius = 50
@@ -75,4 +66,3 @@ city = "Auckland"
 latitude = -36.85582
 longitude = 174.74304
 accuracy_radius = 50
-

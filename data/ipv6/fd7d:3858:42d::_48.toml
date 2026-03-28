@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:08:10Z
 
 [Master]
 CIDR = "fd7d:3858:42d::/48"
@@ -51,6 +53,7 @@ CIDR = "fd7d:3858:42d::4/128"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -102,4 +105,3 @@ city = "Shanghai"
 latitude = 31.22222
 longitude = 121.45806
 accuracy_radius = 50
-

@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:34Z
 
 [Master]
 CIDR = "fd28:cb8f:4c92::/48"
@@ -27,6 +29,7 @@ CIDR = "fd28:cb8f:4c92:2::/64"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -48,6 +51,7 @@ CIDR = "fd28:cb8f:4c92:4::/64"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -121,13 +125,13 @@ region.name = "Hesse"
 region.code = "HE"
 city = "Hessen"
 latitude = 50.55
-longitude = 9.0
+longitude = 9
 accuracy_radius = 50
 
 [[GeoData]]
 CIDR = "fd28:cb8f:4c92:b::/64"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "North Holland"
 region.code = "NH"
@@ -135,4 +139,3 @@ city = "Amsterdam"
 latitude = 52.37403
 longitude = 4.88969
 accuracy_radius = 50
-

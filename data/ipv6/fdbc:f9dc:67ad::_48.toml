@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:18Z
 
 [Master]
 CIDR = "fdbc:f9dc:67ad::/48"
@@ -33,6 +35,7 @@ CIDR = "fdbc:f9dc:67ad::2/128"
 anycast = false
 country.name = "Switzerland"
 country.code = "CH"
+city = "Bern"
 latitude = 46.94809
 longitude = 7.44744
 accuracy_radius = 50
@@ -42,6 +45,7 @@ CIDR = "fdbc:f9dc:67ad:2::/64"
 anycast = false
 country.name = "Switzerland"
 country.code = "CH"
+city = "Bern"
 latitude = 46.94809
 longitude = 7.44744
 accuracy_radius = 50
@@ -51,6 +55,7 @@ CIDR = "fdbc:f9dc:67ad::3/128"
 anycast = false
 country.name = "United States"
 country.code = "US"
+city = "Los Angeles"
 latitude = 28.46582
 longitude = -99.00003
 accuracy_radius = 50
@@ -60,79 +65,7 @@ CIDR = "fdbc:f9dc:67ad:3::/64"
 anycast = false
 country.name = "United States"
 country.code = "US"
+city = "Los Angeles"
 latitude = 28.46582
 longitude = -99.00003
 accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fdbc:f9dc:67ad::18/128"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fdbc:f9dc:67ad:18::/64"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fdbc:f9dc:67ad::5/128"
-anycast = false
-country.name = "Japan"
-country.code = "JP"
-region.name = "Fukuoka"
-region.code = "40"
-city = "Tokyo"
-latitude = 35.6895
-longitude = 139.69171
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fdbc:f9dc:67ad:5::/64"
-anycast = false
-country.name = "Japan"
-country.code = "JP"
-region.name = "Fukuoka"
-region.code = "40"
-city = "Tokyo"
-latitude = 35.6895
-longitude = 139.69171
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fdbc:f9dc:67ad::8/128"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fdbc:f9dc:67ad:8::/64"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
-accuracy_radius = 50
-

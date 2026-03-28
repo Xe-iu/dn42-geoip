@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T20:07:16Z
 
 [Master]
 CIDR = "172.22.142.128/26"
@@ -13,20 +15,9 @@ CIDR = "172.22.142.128/32"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.142.129/32"
-anycast = false
-country.name = "Mexico"
-country.code = "MX"
-region.name = "México"
-region.code = "MEX"
-city = "Mexico City"
-latitude = 19.42847
-longitude = -99.12766
 accuracy_radius = 50
 
 [[GeoData]]
@@ -92,7 +83,7 @@ accuracy_radius = 50
 [[GeoData]]
 CIDR = "172.22.142.135/32"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "Flevoland"
 region.code = "FL"
@@ -212,7 +203,7 @@ accuracy_radius = 50
 [[GeoData]]
 CIDR = "172.22.142.145/32"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "North Holland"
 region.code = "NH"
@@ -279,18 +270,6 @@ region.code = "MD"
 city = "Madrid"
 latitude = 40.4165
 longitude = -3.70256
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.142.151/32"
-anycast = false
-country.name = "Iceland"
-country.code = "IS"
-region.name = "Capital Region"
-region.code = "1"
-city = "Reykjavík"
-latitude = 64.13548
-longitude = -21.89541
 accuracy_radius = 50
 
 [[GeoData]]
@@ -386,31 +365,7 @@ region.name = "Seoul"
 region.code = "11"
 city = "Seoul"
 latitude = 37.58333
-longitude = 127.0
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.142.160/32"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.142.161/32"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
+longitude = 127
 accuracy_radius = 50
 
 [[GeoData]]
@@ -471,30 +426,6 @@ region.code = "MN"
 city = "Minneapolis"
 latitude = 44.97997
 longitude = -93.26384
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.142.168/32"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.142.169/32"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
 accuracy_radius = 50
 
 [[GeoData]]
@@ -574,6 +505,7 @@ CIDR = "172.22.142.176/32"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -595,6 +527,7 @@ CIDR = "172.22.142.178/32"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -604,6 +537,7 @@ CIDR = "172.22.142.179/32"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -621,22 +555,11 @@ longitude = -118.24368
 accuracy_radius = 50
 
 [[GeoData]]
-CIDR = "172.22.142.181/32"
-anycast = false
-country.name = "Brazil"
-country.code = "BR"
-region.name = "São Paulo"
-region.code = "SP"
-city = "Sao Paulo"
-latitude = -7.23333
-longitude = -62.9
-accuracy_radius = 50
-
-[[GeoData]]
 CIDR = "172.22.142.182/32"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -724,16 +647,3 @@ city = "London"
 latitude = 51.50853
 longitude = -0.12574
 accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.142.190/32"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
-accuracy_radius = 50
-

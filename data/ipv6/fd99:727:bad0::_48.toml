@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:08:12Z
 
 [Master]
 CIDR = "fd99:727:bad0::/48"
@@ -64,7 +66,7 @@ country.code = "VN"
 region.name = "Hanoi"
 region.code = "HN"
 city = "Hanoi"
-latitude = 21.0
+latitude = 21
 longitude = 105.75
 accuracy_radius = 50
 
@@ -129,30 +131,6 @@ longitude = -93.26384
 accuracy_radius = 50
 
 [[GeoData]]
-CIDR = "fd99:727:bad0:c00::/56"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fd99:727:bad0:d00::/56"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
-accuracy_radius = 50
-
-[[GeoData]]
 CIDR = "fd99:727:bad0:e00::/56"
 anycast = false
 country.name = "Australia"
@@ -201,30 +179,6 @@ longitude = 151.20732
 accuracy_radius = 50
 
 [[GeoData]]
-CIDR = "fd99:727:bad0:1200::/56"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fd99:727:bad0:1300::/56"
-anycast = false
-country.name = "Vietnam"
-country.code = "VN"
-region.name = "Đồng Nai Province"
-region.code = "39"
-city = "Dong Nai"
-latitude = 11.43205
-longitude = 107.03526
-accuracy_radius = 50
-
-[[GeoData]]
 CIDR = "fd99:727:bad0:1400::/56"
 anycast = false
 country.name = "United States"
@@ -241,6 +195,7 @@ CIDR = "fd99:727:bad0:1600::/56"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -262,6 +217,7 @@ CIDR = "fd99:727:bad0:1800::/56"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -271,6 +227,7 @@ CIDR = "fd99:727:bad0:1900::/56"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -288,22 +245,11 @@ longitude = -118.24368
 accuracy_radius = 50
 
 [[GeoData]]
-CIDR = "fd99:727:bad0:1b00::/56"
-anycast = false
-country.name = "Brazil"
-country.code = "BR"
-region.name = "São Paulo"
-region.code = "SP"
-city = "Sao Paulo"
-latitude = -7.23333
-longitude = -62.9
-accuracy_radius = 50
-
-[[GeoData]]
 CIDR = "fd99:727:bad0:1c00::/56"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -390,18 +336,6 @@ region.code = "ENG"
 city = "London"
 latitude = 51.50853
 longitude = -0.12574
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fd99:727:bad0:2400::/56"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
 accuracy_radius = 50
 
 [[GeoData]]
@@ -493,20 +427,9 @@ CIDR = "fd99:727:bad0:2c00::/56"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fd99:727:bad0:2d00::/56"
-anycast = false
-country.name = "Mexico"
-country.code = "MX"
-region.name = "México"
-region.code = "MEX"
-city = "Mexico City"
-latitude = 19.42847
-longitude = -99.12766
 accuracy_radius = 50
 
 [[GeoData]]
@@ -572,7 +495,7 @@ accuracy_radius = 50
 [[GeoData]]
 CIDR = "fd99:727:bad0:3300::/56"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "Flevoland"
 region.code = "FL"
@@ -692,7 +615,7 @@ accuracy_radius = 50
 [[GeoData]]
 CIDR = "fd99:727:bad0:3d00::/56"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "North Holland"
 region.code = "NH"
@@ -759,18 +682,6 @@ region.code = "MD"
 city = "Madrid"
 latitude = 40.4165
 longitude = -3.70256
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fd99:727:bad0:4300::/56"
-anycast = false
-country.name = "Iceland"
-country.code = "IS"
-region.name = "Capital Region"
-region.code = "1"
-city = "Reykjavík"
-latitude = 64.13548
-longitude = -21.89541
 accuracy_radius = 50
 
 [[GeoData]]
@@ -866,7 +777,7 @@ region.name = "Seoul"
 region.code = "11"
 city = "Seoul"
 latitude = 37.58333
-longitude = 127.0
+longitude = 127
 accuracy_radius = 50
 
 [[GeoData]]
@@ -874,6 +785,7 @@ CIDR = "fd99:727:bad0:4c00::/56"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -925,13 +837,3 @@ city = "Auckland"
 latitude = -36.85582
 longitude = 174.74304
 accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "fd99:727:bad0:5100::/56"
-anycast = false
-country.name = "Guam"
-country.code = "GU"
-latitude = 13.47861
-longitude = 144.81834
-accuracy_radius = 50
-

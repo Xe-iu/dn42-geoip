@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T20:06:50Z
 
 [Master]
 CIDR = "172.22.76.184/29"
@@ -24,6 +26,7 @@ CIDR = "172.22.76.187/32"
 anycast = false
 country.name = "Switzerland"
 country.code = "CH"
+city = "Bern"
 latitude = 46.94809
 longitude = 7.44744
 accuracy_radius = 50
@@ -33,19 +36,7 @@ CIDR = "172.22.76.185/32"
 anycast = false
 country.name = "United States"
 country.code = "US"
+city = "Los Angeles"
 latitude = 28.46582
 longitude = -99.00003
 accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.76.190/32"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
-accuracy_radius = 50
-

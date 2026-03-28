@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:29Z
 
 [Master]
 CIDR = "fd6c:243b:40fb::/48"
@@ -9,4 +11,3 @@ fallback_to_master = true
 country.name = "Spain"
 country.code = "ES"
 source = "DN42"
-

@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T20:06:23Z
 
 [Master]
 CIDR = "172.22.123.0/27"
@@ -55,13 +57,3 @@ city = "Auckland"
 latitude = -36.85582
 longitude = 174.74304
 accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.123.4/32"
-anycast = false
-country.name = "Guam"
-country.code = "GU"
-latitude = 13.47861
-longitude = 144.81834
-accuracy_radius = 50
-

@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T20:07:09Z
 
 [Master]
 CIDR = "172.22.76.96/27"
@@ -9,28 +11,3 @@ fallback_to_master = true
 country.name = "China"
 country.code = "CN"
 source = "DN42"
-
-[[GeoData]]
-CIDR = "172.22.76.117/32"
-anycast = false
-country.name = "United States"
-country.code = "US"
-region.name = "New York"
-region.code = "NY"
-city = "New York City"
-latitude = 40.71427
-longitude = -74.00597
-accuracy_radius = 50
-
-[[GeoData]]
-CIDR = "172.22.76.123/32"
-anycast = false
-country.name = "Japan"
-country.code = "JP"
-region.name = "Fukuoka"
-region.code = "40"
-city = "Tokyo"
-latitude = 35.6895
-longitude = 139.69171
-accuracy_radius = 50
-

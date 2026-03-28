@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T20:06:28Z
 
 [Master]
 CIDR = "172.20.143.32/27"
@@ -13,7 +15,7 @@ source = "DN42"
 [[GeoData]]
 CIDR = "172.20.143.32/32"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "North Holland"
 region.code = "NH"
@@ -75,6 +77,7 @@ CIDR = "172.20.143.37/32"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -151,7 +154,7 @@ accuracy_radius = 50
 [[GeoData]]
 CIDR = "172.20.143.44/32"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "North Holland"
 region.code = "NH"
@@ -195,4 +198,3 @@ city = "Auckland"
 latitude = -36.85582
 longitude = 174.74304
 accuracy_radius = 50
-

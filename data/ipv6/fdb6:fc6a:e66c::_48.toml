@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:26Z
 
 [Master]
 CIDR = "fdb6:fc6a:e66c::/48"
@@ -141,4 +143,3 @@ city = "Shanghai"
 latitude = 31.22222
 longitude = 121.45806
 accuracy_radius = 50
-

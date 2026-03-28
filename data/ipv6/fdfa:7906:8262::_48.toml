@@ -1,0 +1,35 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T20:09:33Z
+update_time = 2026-03-28T20:09:33Z
+
+[Master]
+CIDR = "fdfa:7906:8262::/48"
+fallback_to_master = false
+source = "DN42"
+
+[[GeoData]]
+CIDR = "fdfa:7906:8262:cb00::/56"
+anycast = false
+country.name = "Germany"
+country.code = "DE"
+region.name = "Hesse"
+region.code = "HE"
+city = "Frankfurt"
+latitude = 49.68333
+longitude = 10.53333
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fdfa:7906:8262:cf00::/56"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Guangdong"
+region.code = "GD"
+city = "Guangzhou"
+latitude = 23.11667
+longitude = 113.25
+accuracy_radius = 50

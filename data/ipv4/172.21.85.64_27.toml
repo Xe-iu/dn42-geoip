@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T20:06:25Z
 
 [Master]
 CIDR = "172.21.85.64/27"
@@ -23,18 +25,6 @@ longitude = 174.74304
 accuracy_radius = 50
 
 [[GeoData]]
-CIDR = "172.21.85.72/29"
-anycast = false
-country.name = "Australia"
-country.code = "AU"
-region.name = "New South Wales"
-region.code = "NSW"
-city = "Alexandria"
-latitude = -19.05709
-longitude = 136.70682
-accuracy_radius = 50
-
-[[GeoData]]
 CIDR = "172.21.85.80/29"
 anycast = false
 country.name = "Switzerland"
@@ -51,4 +41,3 @@ country.code = "CH"
 latitude = 46.94809
 longitude = 7.44744
 accuracy_radius = 50
-

@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:11Z
 
 [Master]
 CIDR = "fdda:8ca4:1556::/48"
@@ -27,6 +29,7 @@ CIDR = "fdda:8ca4:1556:1000::/56"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
@@ -115,7 +118,7 @@ accuracy_radius = 50
 [[GeoData]]
 CIDR = "fdda:8ca4:1556:c000::/56"
 anycast = false
-country.name = "The Netherlands"
+country.name = "Netherlands"
 country.code = "NL"
 region.name = "North Holland"
 region.code = "NH"
@@ -135,4 +138,3 @@ city = "Dallas"
 latitude = 32.78306
 longitude = -96.80667
 accuracy_radius = 50
-

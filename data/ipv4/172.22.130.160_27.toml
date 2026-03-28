@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T20:07:54Z
 
 [Master]
 CIDR = "172.22.130.160/27"
@@ -64,7 +66,7 @@ country.code = "VN"
 region.name = "Hanoi"
 region.code = "HN"
 city = "Hanoi"
-latitude = 21.0
+latitude = 21
 longitude = 105.75
 accuracy_radius = 50
 
@@ -253,7 +255,7 @@ CIDR = "172.22.130.190/32"
 anycast = false
 country.name = "Singapore"
 country.code = "SG"
+city = "Singapore"
 latitude = 1.28967
 longitude = 103.85007
 accuracy_radius = 50
-

@@ -1,7 +1,9 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T17:48:07Z
+update_time = 2026-03-28T20:09:26Z
 
 [Master]
 CIDR = "fdec:4f96:8be1::/48"
@@ -24,6 +26,7 @@ CIDR = "fdec:4f96:8be1:abcd::/64"
 anycast = false
 country.name = "Hong Kong"
 country.code = "HK"
+city = "Hong Kong"
 latitude = 22.27832
 longitude = 114.17469
 accuracy_radius = 50
@@ -60,4 +63,3 @@ city = "Suihua"
 latitude = 46.64814
 longitude = 126.96656
 accuracy_radius = 50
-

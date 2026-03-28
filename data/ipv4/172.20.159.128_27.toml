@@ -1,0 +1,25 @@
+# Automatically generated from Geofeed, DO NOT EDIT
+
+[Version]
+data_version = "1.1"
+create_time = 2026-03-28T20:08:10Z
+update_time = 2026-03-28T20:08:10Z
+
+[Master]
+CIDR = "172.20.159.128/27"
+fallback_to_master = true
+country.name = "Australia"
+country.code = "AU"
+source = "DN42"
+
+[[GeoData]]
+CIDR = "172.20.159.128/27"
+anycast = false
+country.name = "Australia"
+country.code = "AU"
+region.name = "Queensland"
+region.code = "QLD"
+city = "Brisbane"
+latitude = -27.46794
+longitude = 153.02809
+accuracy_radius = 50
