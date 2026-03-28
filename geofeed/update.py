@@ -23,6 +23,34 @@ def parse_toml_value(value: str) -> str:
     return v
 
 
+def load_existing_create_time(outpath):
+    if not os.path.exists(outpath):
+        return ""
+
+    in_version = False
+    with open(outpath, "r", encoding="utf-8", errors="ignore") as f:
+        for raw in f:
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+
+            if line == "[Version]":
+                in_version = True
+                continue
+            if line.startswith("[") and line.endswith("]") and line != "[Version]":
+                in_version = False
+                continue
+
+            if not in_version or "=" not in line:
+                continue
+
+            key, raw_value = line.split("=", 1)
+            if key.strip() == "create_time":
+                return parse_toml_value(raw_value)
+
+    return ""
+
+
 def load_existing_addresses(outpath):
     """
     Parse existing TOML and return:
@@ -93,8 +121,10 @@ def sort_address_items(addresses: OrderedDict):
     return output
 
 
-def build_version_and_master_text(master_cidr, source, master_country_code):
+def build_version_and_master_text(master_cidr, source, master_country_code, existing_create_time):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    create_time = existing_create_time if existing_create_time else now
+
     country_code = (master_country_code or "").strip().upper()
     country_name = geolib.country_map.get(country_code.lower(), "") if country_code else ""
 
@@ -104,7 +134,7 @@ def build_version_and_master_text(master_cidr, source, master_country_code):
     lines = [
         "[Version]",
         'data_version = "1.1"',
-        f"create_time = {now}",
+        f"create_time = {create_time}",
         f"update_time = {now}",
         "",
         "[Master]",
@@ -215,9 +245,9 @@ def build_geodata_text(geo, existing_addresses):
     return "\n".join(lines)
 
 
-def render_file_content(master_cidr, source, master_country_code, csv_content, ip_version, address_map):
+def render_file_content(master_cidr, source, master_country_code, csv_content, ip_version, address_map, existing_create_time):
     blocks = ["# Automatically generated from Geofeed, DO NOT EDIT", ""]
-    blocks.append(build_version_and_master_text(master_cidr, source, master_country_code))
+    blocks.append(build_version_and_master_text(master_cidr, source, master_country_code, existing_create_time))
 
     for row in csv_content:
         geo = build_geo_row(row, ip_version)
@@ -270,6 +300,7 @@ for fname, data in geofeeds.items():
         print(f"{fname} missing master_cidr, skipping")
         continue
 
+    existing_create_time = load_existing_create_time(outpath)
     existing_address_map = load_existing_addresses(outpath)
     content = render_file_content(
         master_cidr,
@@ -278,5 +309,6 @@ for fname, data in geofeeds.items():
         csv_content,
         netip.version,
         existing_address_map,
+        existing_create_time,
     )
     write_if_changed(outpath, content)

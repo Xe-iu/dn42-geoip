@@ -22,17 +22,6 @@ latitude = 35.6937632
 longitude = 139.7036319
 accuracy_radius = 50
 
-address.default =      "1"                  # 可选/Optional
-address.de =           "2"                  # 可选/Optional
-address.en =           "3"                  # 可选/Optional
-address.es =           "4"                  # 可选/Optional
-address.fr =           "5"                  # 可选/Optional
-address.ja =           "6"                  # 可选/Optional
-address.pt-BR =        "7"                  # 可选/Optional
-address.ru =           "8"                  # 可选/Optional
-address.zh-hans =      "9"                  # 可选/Optional
-address.zh-hant =      "0"                  # 可选/Optional
-
 [[GeoData]]
 CIDR = "172.20.159.2/32"
 anycast = false
