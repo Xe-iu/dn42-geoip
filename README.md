@@ -100,7 +100,7 @@ anycast =               true                 # 可选/Optional | 默认false / e
 | 字段 | 名称 | 必要性 | 说明 |
 | - | - | - | - |
 | `CIDR` | 网段 | 必填 | 您想赋予以下地理位置信息的网段，网段范围不得大于主网段，IPv4最小为`/32`，IPv6最小为`/128`。 |
-| `anycast` | 任播状态 | 选填 | 该字段的值只能为`false`和`true`俩种。`false`表示该网段不是仁播网段，`true`则反之。不填写或者填写错误则默认为`false`。 |
+| `anycast` | 任播状态 | 选填 | 该字段的值只能为`false`和`true`俩种。`false`表示该网段不是任播网段，`true`则反之，`anycast`的值为`true`时下面的字段失效，即不会处理。不填写或者填写错误则默认为`false`。 |
 | `country.name` | 国家或地区的ISO名称 | 必填 | |
 | `country.code`| 国家或地区的ISO代码 | 必填 | |
 | `region.name` | 一级行政区的名称 | 选填 | 若填写`city`时则该项必填，特殊情况可不填（如中国香港、中国澳门）
@@ -171,34 +171,6 @@ anycast =               true                 # 可选/Optional | 默认false / e
 root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mmdb -i 172.20.159.1
 
   {
-    "address": 
-      [
-        {
-          "names": 
-            {
-              "de": 
-                "2" <utf8_string>
-              "default": 
-                "1" <utf8_string>
-              "en": 
-                "3" <utf8_string>
-              "es": 
-                "4" <utf8_string>
-              "fr": 
-                "5" <utf8_string>
-              "ja": 
-                "6" <utf8_string>
-              "pt-BR": 
-                "7" <utf8_string>
-              "ru": 
-                "8" <utf8_string>
-              "zh-hans": 
-                "9" <utf8_string>
-              "zh-hant": 
-                "0" <utf8_string>
-            }
-        }
-      ]
     "city": 
       {
         "names": 
@@ -344,7 +316,14 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
             }
         }
       ]
+    "traits": 
+      {
+        "is_anycast": 
+          false <boolean>
+      }
   }
+
+
 ```
 
 ---
