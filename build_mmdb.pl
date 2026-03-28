@@ -16,6 +16,7 @@ my %types = (
     registered_country => 'map',
     city               => 'map',
     location           => 'map',
+    traits             => 'map',
     names              => 'map',
     subdivisions       => ['array', 'map'],
     address            => ['array', 'map'],
@@ -28,6 +29,7 @@ my %types = (
     accuracy_radius => 'uint16',
     time_zone       => 'utf8_string',
     default         => 'utf8_string',
+    is_anycast      => 'boolean',
 );
 
 foreach my $lang (@languages) {
@@ -289,6 +291,13 @@ sub insert_cidr_and_info {
         $has_valid_data = 1;
     }
 
+    if (defined $info->{traits}{is_anycast}) {
+        $geoinfo{traits} = {
+            is_anycast => $info->{traits}{is_anycast} ? 1 : 0,
+        };
+        $has_valid_data = 1;
+    }
+
     if ($info->{address_names} && %{$info->{address_names}}) {
         $geoinfo{address} = [
             {
@@ -335,6 +344,7 @@ sub process_blocks {
             my $latitude = $row->[ $idx{latitude} // 7 ];
             my $longitude = $row->[ $idx{longitude} // 8 ];
             my $accuracy_radius = $row->[ $idx{accuracy_radius} // 9 ];
+            my $is_anycast = exists $idx{is_anycast} ? $row->[ $idx{is_anycast} ] : '';
             my $time_zone = exists $idx{time_zone} ? $row->[ $idx{time_zone} ] : undef;
 
             my $info = {};
@@ -380,6 +390,12 @@ sub process_blocks {
                     $tz = $locationdb{$geoname_id}{time_zone};
                 }
                 $info->{location}{time_zone} = $tz if defined $tz && $tz ne '';
+            }
+
+            if (defined $is_anycast && $is_anycast ne '') {
+                my $v = lc($is_anycast);
+                my $is_true = ($v eq '1' || $v eq 'true');
+                $info->{traits}{is_anycast} = $is_true ? 1 : 0;
             }
 
             if (exists $addressdb{$network}) {

@@ -1,7 +1,7 @@
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-03-28T17:47:58Z
+update_time = 2026-03-28T21:17:46Z
 
 [Master]
 CIDR = "172.20.159.0/28"
@@ -57,10 +57,14 @@ CIDR = "172.20.159.10/32"
 anycast = false
 country.name = "United States"
 country.code = "US"
-region.name = "Missouri"
-region.code = "MO"
-city = "Kansas City"
-latitude = -94.5784
-longitude = 39.10146
+region.name = "California"
+region.code = "CA"
+city = "Los Angeles"
+latitude = 34.0549
+longitude = -118.2426
 accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "172.20.159.14/32"
+anycast = true
 

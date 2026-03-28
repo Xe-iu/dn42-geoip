@@ -6,12 +6,8 @@
 
 ## **说明**
 
-**新数据结构的分支，目前仅确定了新的数据结构，脚本等配套工具以及README未更新。**
-**The branch for the new data structure currently only defines the new data structure. Supporting tools such as scripts and the README have not yet been updated.**
-
-[新数据结构README-简体中文](./example.geoip-data.explain-zh-hans.md)
-
-[New Data Structure README - English](./example.geoip-data.explain-en.md)
+**新数据结构的预览分支。将有7-14days的过渡时间，最晚于 2025/04/12 该分支所修改的内容将合并到main分支。**
+**Preview branch for the new data structure. There will be a 7-14 day transition period, and the changes in this branch will be merged into the main branch by April 12, 2025 at the latest.**
 
 [新数据结构示例/New Data Structure Example](./example.geoip-data.toml)
 
@@ -32,7 +28,7 @@
 
 示例：
 ```
-CIRD = 172.20.159.0/28
+CIDR = 172.20.159.0/28
 file_name= 172.20.159.0_28.toml
 ```
 
@@ -43,7 +39,51 @@ IPv6网段请到`data/ipv6`创建
 
 ------------
 
-## **`[Master]`下的字段解释**
+## **示例**
+
+```toml
+[Version]
+data_version =     "1.1"                    # 数据结构版本号
+create_time  = 2025-12-31T11:45:14Z         # 创建时间 (UTC | yyyy-mm-ddThh:mm:ssZ)
+update_time  = 2025-12-31T11:45:14Z         # 最近修改时间 (UTC | yyyy-mm-ddThh:mm:ssZ)
+
+[Master]
+CIDR =                  "172.20.159.0/28"   # 必选/Required
+fallback_to_master =    false               # 可选/Optional | 默认为true / example true
+country.name =          "China"             # 可选/Optional | 如未填写则fallback_to_master字段强制为false
+country.code =          "CN"                # 可选/Optional
+source =                "DN42"              # 必选/Required | Can be DN42, NeoNetwork, ICVPN, ChaosVPN, CRXN, or other networks interconnected with DN42
+
+[[GeoData]]
+CIDR =                  "172.20.159.1/32"   # 必选/Required
+anycast =               false               # 可选/Optional | 默认false / example flase
+country.name =          "Japan"             # 必选/Required
+country.code =          "JP"                # 必选/Required
+region.name =           "Tokyo"             # 可选/Optional
+region.code =           "13"                # 可选/Optional
+city =                  "Tokyo"             # 可选/Optional
+latitude =              35.6937632          # 必选/Required
+longitude =             139.7036319         # 必选/Required
+accuracy_radius=        50                  # 必选/Required
+
+# 试验性 / Experimental
+address.default =      ""                  # 可选/Optional
+address.de =           ""                  # 可选/Optional
+address.en =           ""                  # 可选/Optional
+address.es =           ""                  # 可选/Optional
+address.fr =           ""                  # 可选/Optional
+address.ja =           ""                  # 可选/Optional
+address.pt-BR =        ""                  # 可选/Optional
+address.ru =           ""                  # 可选/Optional
+address.zh-hans =      ""                  # 可选/Optional
+address.zh-hant =      ""                  # 可选/Optional
+
+[[GeoData]]
+CIDR =                  "172.20.159.14/32"   # 必选/Required
+anycast =               true                 # 可选/Optional | 默认false / example flase
+```
+
+### **`[Master]`下的字段解释**
 
 | 字段 | 名称 | 必要性 | 说明 |
 | - | - | - | - |
@@ -55,12 +95,11 @@ IPv6网段请到`data/ipv6`创建
 
 ------------
 
-
-## **`[[GeoData]]`下的字段解释**
+### **`[[GeoData]]`下的字段解释**
 
 | 字段 | 名称 | 必要性 | 说明 |
 | - | - | - | - |
-| `CIRD` | 网段 | 必填 | 您想赋予以下地理位置信息的网段，网段范围不得大于主网段，IPv4最小为`/32`，IPv6最小为`/128`。 |
+| `CIDR` | 网段 | 必填 | 您想赋予以下地理位置信息的网段，网段范围不得大于主网段，IPv4最小为`/32`，IPv6最小为`/128`。 |
 | `anycast` | 任播状态 | 选填 | 该字段的值只能为`false`和`true`俩种。`false`表示该网段不是仁播网段，`true`则反之。不填写或者填写错误则默认为`false`。 |
 | `country.name` | 国家或地区的ISO名称 | 必填 | |
 | `country.code`| 国家或地区的ISO代码 | 必填 | |
@@ -75,7 +114,7 @@ IPv6网段请到`data/ipv6`创建
 
 ---
 
-### 关于 试验性 选项
+#### 关于 试验性 选项
 - 如您想提供更精确的地理位置信息或是有意义的备注可在`address.*`字段填写，该字段均为选填。
 - **有意义的备注**可以是：主机提供商的信息、该节点在您AS内的类别（边缘节点、骨干网等）、家庭节点的ISP信息等。
 - 本库恕不为`address.*`字段提供i18n服务 ~~（虽然国家、城市名称i18n数据仍不完善）~~ ，可自行为`address.*`字段填写各语言的值。
@@ -97,26 +136,6 @@ IPv6网段请到`data/ipv6`创建
 | `address.zh-hans` | 繁体中文address | 选填 | 为繁体中文的返回值，值必须为中文。 |
 
 
-## **示例**
-
-```toml
-[172.20.159.0/28]			      #整个网段（主网段）
-country =      "China"		  #在DN42注册时所填写的国家或地区
-country_code = "CN"			    #国家或地区的iso码
-                            #这里的经纬度不用填写，其它必填
-source =       "DN42"		    #在最大网段是必填的，其它选填。
-
-[172.20.159.1/32]				      #节点IP
-country =      "Japan"		    #节点所在的国家或地区
-country_code = "JP"			      #国家或地区的iso码
-region =       "Tokyo"		    #所在的一级行政区（没有可以不用写）
-region_code =  "13"			      #所在的一级行政区的iso码（没有可以不用写）
-city =         "Tokyo"		    #所在城市（一般为二级行政区）
-latitude =      35.6937632	  #纬度（精确到你填写的最小的行政区即可）
-longitude =     139.7036319	  #纬度（精确到你填写的最小的行政区即可）
-accuracy_radius=50			      #半径（随便填啦，不要太离谱即可）
-```
-
 ---
 
 ## **提交 Geoip 数据**
@@ -130,24 +149,56 @@ accuracy_radius=50			      #半径（随便填啦，不要太离谱即可）
 1. 依照 [RFC 8805](https://www.rfc-editor.org/rfc/rfc8805.html) 编写 Geofeed CSV 文件
 2. 依照 [RFC 9632](https://www.rfc-editor.org/rfc/rfc9632.html) 将 Geofeed 网址发布到 DN42 Registry
 3. 本项目UTC时间每周日0点会自动抓取 Geofeed 文件，更新数据
+4. 自动脚本会校验 Geofeed 数据是否合理，不合理的将会丢弃，请按照 [city.csv](./docs/city.csv) 自行检查。
+5. 自动脚本不会更改 `address.*` 字段的值，如有需要，请按照 **手动提交** 的方法修改 `address.*` 字段的值.
 
 ### 手动提交
 
 1. Fork 本仓库
-2. 在 `data/ipv4` 或 `data/ipv6` 文件夹内新建文件，填写内容
-3. 文件名格式：使用你的 DN42 网段，将 `/` 替换为 `_`，然后加 `.toml` 后缀
+2. 在 `data/ipv4` 或 `data/ipv6` 文件夹内新建文件。
+   文件名格式：使用你的 DN42 网段，将 `/` 替换为 `_`，然后加 `.toml` 后缀
    例如：`172.20.159.0_28.toml`
-4. 提交时请使用网段 inetnum/inet6num 中任意一个 `mnt-by` 的 **PGP** 或 **SSH** 密钥签名
-5. 发起 PR 等待审核合并
+3. 按照上面的示例来填写数据
+4. 填写完成后，执行仓库根目录下的 `datacheck` 二进制可执行单文件，进行自动检查。检查通过即可进行下一步操作
+5. 提交时请使用网段 inetnum/inet6num 中任意一个 `mnt-by` 的 **PGP** 或 **SSH** 密钥签名
+6. 发起 PR 等待审核合并
 
 ---
 
 ## **.mmdb 文件结构示例**
 
 ```
-root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mmdb -i fd43:83b9:82e2:face::
+root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mmdb -i 172.20.159.1
 
   {
+    "address": 
+      [
+        {
+          "names": 
+            {
+              "de": 
+                "2" <utf8_string>
+              "default": 
+                "1" <utf8_string>
+              "en": 
+                "3" <utf8_string>
+              "es": 
+                "4" <utf8_string>
+              "fr": 
+                "5" <utf8_string>
+              "ja": 
+                "6" <utf8_string>
+              "pt-BR": 
+                "7" <utf8_string>
+              "ru": 
+                "8" <utf8_string>
+              "zh-hans": 
+                "9" <utf8_string>
+              "zh-hant": 
+                "0" <utf8_string>
+            }
+        }
+      ]
     "city": 
       {
         "names": 
@@ -166,8 +217,10 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
               "Tóquio" <utf8_string>
             "ru": 
               "Токио" <utf8_string>
-            "zh-CN": 
+            "zh-hans": 
               "东京" <utf8_string>
+            "zh-hant": 
+              "東京" <utf8_string>
           }
       }
     "continent": 
@@ -192,8 +245,10 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
               "Ásia" <utf8_string>
             "ru": 
               "Азия" <utf8_string>
-            "zh-CN": 
+            "zh-hans": 
               "亚洲" <utf8_string>
+            "zh-hant": 
+              "亞洲" <utf8_string>
           }
       }
     "country": 
@@ -218,7 +273,9 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
               "Japão" <utf8_string>
             "ru": 
               "Япония" <utf8_string>
-            "zh-CN": 
+            "zh-hans": 
+              "日本" <utf8_string>
+            "zh-hant": 
               "日本" <utf8_string>
           }
       }
@@ -236,27 +293,29 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
     "registered_country": 
       {
         "geoname_id": 
-          1861060 <uint32>
+          1814991 <uint32>
         "iso_code": 
-          "JP" <utf8_string>
+          "CN" <utf8_string>
         "names": 
           {
             "de": 
-              "Japan" <utf8_string>
+              "China" <utf8_string>
             "en": 
-              "Japan" <utf8_string>
+              "China" <utf8_string>
             "es": 
-              "Japón" <utf8_string>
+              "China" <utf8_string>
             "fr": 
-              "Japon" <utf8_string>
+              "Chine" <utf8_string>
             "ja": 
-              "日本" <utf8_string>
+              "中国" <utf8_string>
             "pt-BR": 
-              "Japão" <utf8_string>
+              "China" <utf8_string>
             "ru": 
-              "Япония" <utf8_string>
-            "zh-CN": 
-              "日本" <utf8_string>
+              "Китай" <utf8_string>
+            "zh-hans": 
+              "中国" <utf8_string>
+            "zh-hant": 
+              "中國" <utf8_string>
           }
       }
     "subdivisions": 
@@ -278,8 +337,10 @@ root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mm
                 "Tóquio" <utf8_string>
               "ru": 
                 "Токио" <utf8_string>
-              "zh-CN": 
+              "zh-hans": 
                 "东京都" <utf8_string>
+              "zh-hant": 
+                "東京都" <utf8_string>
             }
         }
       ]
