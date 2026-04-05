@@ -3,7 +3,7 @@
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:47:58Z
-update_time = 2026-04-05T10:15:03Z
+update_time = 2026-04-05T10:54:17Z
 
 [Master]
 CIDR = "172.20.154.224/27"
@@ -64,15 +64,23 @@ longitude = -111.89105
 accuracy_radius = 50
 
 [[GeoData]]
+CIDR = "172.20.154.231/32"
+anycast = false
+country.name = "Netherlands"
+country.code = "NL"
+city = "Amsterdam"
+latitude = 52.37403
+longitude = 4.88969
+accuracy_radius = 50
+
+[[GeoData]]
 CIDR = "172.20.154.232/32"
 anycast = false
-country.name = "Germany"
-country.code = "DE"
-region.name = "Hesse"
-region.code = "HE"
-city = "Frankfurt"
-latitude = 49.68333
-longitude = 10.53333
+country.name = "Netherlands"
+country.code = "NL"
+city = "Amsterdam"
+latitude = 52.37403
+longitude = 4.88969
 accuracy_radius = 50
 
 [[GeoData]]

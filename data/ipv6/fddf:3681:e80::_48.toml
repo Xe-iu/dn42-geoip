@@ -3,7 +3,7 @@
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-04-05T10:15:04Z
+update_time = 2026-04-05T10:54:17Z
 
 [Master]
 CIDR = "fddf:3681:e80::/48"
@@ -64,15 +64,23 @@ longitude = -111.89105
 accuracy_radius = 50
 
 [[GeoData]]
+CIDR = "fddf:3681:e80:231::/64"
+anycast = false
+country.name = "Netherlands"
+country.code = "NL"
+city = "Amsterdam"
+latitude = 52.37403
+longitude = 4.88969
+accuracy_radius = 50
+
+[[GeoData]]
 CIDR = "fddf:3681:e80:232::/64"
 anycast = false
-country.name = "Germany"
-country.code = "DE"
-region.name = "Hesse"
-region.code = "HE"
-city = "Frankfurt"
-latitude = 49.68333
-longitude = 10.53333
+country.name = "Netherlands"
+country.code = "NL"
+city = "Amsterdam"
+latitude = 52.37403
+longitude = 4.88969
 accuracy_radius = 50
 
 [[GeoData]]
@@ -105,4 +113,16 @@ country.code = "HK"
 city = "Kowloon"
 latitude = 22.30456
 longitude = 114.16193
+accuracy_radius = 50
+
+[[GeoData]]
+CIDR = "fddf:3681:e80:300::/56"
+anycast = false
+country.name = "China"
+country.code = "CN"
+region.name = "Shanghai"
+region.code = "SH"
+city = "Shanghai"
+latitude = 31.22222
+longitude = 121.45806
 accuracy_radius = 50
