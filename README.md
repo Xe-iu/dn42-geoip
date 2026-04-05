@@ -49,7 +49,6 @@ update_time  = 2025-12-31T11:45:14Z         # 最近修改时间 (UTC | yyyy-mm-
 
 [Master]
 CIDR =                  "172.20.159.0/28"   # 必选/Required
-fallback_to_master =    false               # 可选/Optional | 默认为true / example true
 country.name =          "China"             # 可选/Optional | 如未填写则fallback_to_master字段强制为false
 country.code =          "CN"                # 可选/Optional
 source =                "DN42"              # 必选/Required | Can be DN42, NeoNetwork, ICVPN, ChaosVPN, CRXN, or other networks interconnected with DN42
@@ -88,7 +87,6 @@ anycast =               true                 # 可选/Optional | 默认false / e
 | 字段 | 名称 | 必要性 | 说明 |
 | - | - | - | - |
 |`CIDR` | 主网段 | 必填 | 为`inetnum`或`inet6num`里的网段 |
-|`fallback_to_master` | 默认返回主网段的地理位置信息 | 选填 | 在未查询到具体网段的地理位置信息时默认返回主网段的地理位置信息，默认值为`true` |
 | `country.name` | 国家或地区的ISO名称 | 选填 | DN42 registry 允许该项为空值，该项故为选填。若无填写该项则`country.code`无需填写且`fallback_to_master`的值强制为`false`|
 | `country.code`| 国家或地区的ISO代码 | 选填 | 如有填写`country.name`则该项为必填|
 | `source` | 网段来源 | 必填 | 可填写 `DN42`、`NeoNetwork`、`ICVPN`、`ChaosVPN`、`CRXN` 或其它与 DN42 互联的网络 |

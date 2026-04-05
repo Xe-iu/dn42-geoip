@@ -46,6 +46,9 @@ jobs:
         run: python3 update.py
         working-directory: geofeed
 
+      - name: Run datacheck
+        run: ./datacheck
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"

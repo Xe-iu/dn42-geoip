@@ -1,4 +1,4 @@
-﻿import finder
+import finder
 import geolib
 import os
 import ipaddress
@@ -128,9 +128,6 @@ def build_version_and_master_text(master_cidr, source, master_country_code, exis
     country_code = (master_country_code or "").strip().upper()
     country_name = geolib.country_map.get(country_code.lower(), "") if country_code else ""
 
-    # Rule: when both master country fields are absent, fallback_to_master must be false.
-    fallback_to_master = bool(country_name and country_code)
-
     lines = [
         "[Version]",
         'data_version = "1.1"',
@@ -139,7 +136,6 @@ def build_version_and_master_text(master_cidr, source, master_country_code, exis
         "",
         "[Master]",
         f'CIDR = "{toml_escape(master_cidr)}"',
-        f"fallback_to_master = {'true' if fallback_to_master else 'false'}",
     ]
 
     if country_name:

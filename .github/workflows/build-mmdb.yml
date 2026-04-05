@@ -24,7 +24,7 @@ jobs:
       - name: Run toml2csv
         run: |
           chmod +x ./toml2csv
-          ./toml2csv
+          ./toml2csv --lang both
 
       - name: Run build_mmdb.pl
         run: perl build_mmdb.pl

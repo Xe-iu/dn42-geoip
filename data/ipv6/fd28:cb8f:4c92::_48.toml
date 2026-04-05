@@ -3,11 +3,10 @@
 [Version]
 data_version = "1.1"
 create_time = 2026-03-28T17:48:07Z
-update_time = 2026-03-28T20:09:34Z
+update_time = 2026-04-05T10:15:04Z
 
 [Master]
 CIDR = "fd28:cb8f:4c92::/48"
-fallback_to_master = true
 country.name = "Taiwan"
 country.code = "TW"
 source = "DN42"

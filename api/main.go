@@ -1,4 +1,4 @@
-﻿package main
+package main
 
 import (
 	"flag"
@@ -73,6 +73,9 @@ func queryIP(ipStr string) gin.H {
 		},
 		"address":      record.Address,
 		"subdivisions": record.Subdivisions,
+		"traits": gin.H{
+			"is_anycast": record.Traits.IsAnycast,
+		},
 		"location": gin.H{
 			"latitude":        lat,
 			"longitude":       lon,
@@ -110,6 +113,7 @@ Postal Code        : %s
 Coordinates        : %.4f, %.4f (+/-%dkm)
 Time Zone          : %v
 Address            : %v
+Is Anycast         : %v
 `,
 			result["ip"],
 			result["country"].(gin.H)["name"],
@@ -125,6 +129,7 @@ Address            : %v
 			loc["accuracy_radius"].(int),
 			loc["time_zone"],
 			result["address"],
+			result["traits"].(gin.H)["is_anycast"],
 		)
 		return
 	}
