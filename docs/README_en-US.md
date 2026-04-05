@@ -89,7 +89,7 @@ anycast =               true                 # Optional | Default false
 | Field                | Name                           | Required | Description                                                                                                                          |
 | -------------------- | ------------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `CIDR`               | Primary network                | Required | The network range from `inetnum` or `inet6num`                                                                                       |
-| `country.name`       | Country/region ISO name        | Optional | DN42 registry allows this field to be empty. If empty, `country.code` is not required and `fallback_to_master` is forced to `false`. |
+| `country.name`       | Country/region ISO name        | Optional | DN42 registry allows this field to be empty.  |
 | `country.code`       | Country/region ISO code        | Optional | Required if `country.name` is provided                                                                                               |
 | `source`             | Network source                 | Required | Can be `DN42`, `NeoNetwork`, `ICVPN`, `ChaosVPN`, `CRXN`, or other DN42-connected networks                                           |
 
@@ -172,7 +172,35 @@ This project supports automatic updates via published Geofeed, and also allows m
 ```
 root@xeiuserver:/opt/dn42/geo-ip-master# mmdblookup --file GeoLite2-City-DN42.mmdb -i 172.20.159.1
 
-  {
+    {
+    "address": 
+      [
+        {
+          "names": 
+            {
+              "de": 
+                "2" <utf8_string>
+              "default": 
+                "1" <utf8_string>
+              "en": 
+                "3" <utf8_string>
+              "es": 
+                "4" <utf8_string>
+              "fr": 
+                "5" <utf8_string>
+              "ja": 
+                "6" <utf8_string>
+              "pt-BR": 
+                "7" <utf8_string>
+              "ru": 
+                "8" <utf8_string>
+              "zh-hans": 
+                "9" <utf8_string>
+              "zh-hant": 
+                "0" <utf8_string>
+            }
+        }
+      ]
     "city": 
       {
         "names": 
