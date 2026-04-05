@@ -49,8 +49,7 @@ update_time  = 2025-12-31T11:45:14Z         # Last update time (UTC | yyyy-mm-dd
 
 [Master]
 CIDR =                  "172.20.159.0/28"   # Required
-fallback_to_master =    false               # Optional | Default is true
-country.name =          "China"             # Optional | If not set, fallback_to_master is forced to false
+country.name =          "China"             # Optional
 country.code =          "CN"                # Optional
 source =                "DN42"              # Required | Can be DN42, NeoNetwork, ICVPN, ChaosVPN, CRXN, or other networks interconnected with DN42
 
@@ -90,7 +89,6 @@ anycast =               true                 # Optional | Default false
 | Field                | Name                           | Required | Description                                                                                                                          |
 | -------------------- | ------------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `CIDR`               | Primary network                | Required | The network range from `inetnum` or `inet6num`                                                                                       |
-| `fallback_to_master` | Fallback to master geolocation | Optional | If no specific geolocation is found, return the master network’s geolocation. Default is `true`.                                     |
 | `country.name`       | Country/region ISO name        | Optional | DN42 registry allows this field to be empty. If empty, `country.code` is not required and `fallback_to_master` is forced to `false`. |
 | `country.code`       | Country/region ISO code        | Optional | Required if `country.name` is provided                                                                                               |
 | `source`             | Network source                 | Required | Can be `DN42`, `NeoNetwork`, `ICVPN`, `ChaosVPN`, `CRXN`, or other DN42-connected networks                                           |

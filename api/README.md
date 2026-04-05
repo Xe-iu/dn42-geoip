@@ -63,7 +63,22 @@ curl http://127.0.0.1:8080/
 
 ```json
 {
-  "address": null,
+  "address": [
+    {
+      "names": {
+        "default": "1",
+        "de": "2",
+        "en": "3",
+        "es": "4",
+        "fr": "5",
+        "ja": "6",
+        "pt-BR": "7",
+        "ru": "8",
+        "zh-hans": "9",
+        "zh-hant": "0"
+      }
+    }
+  ],
   "city": {
     "name": {
       "de": "Shanghai",

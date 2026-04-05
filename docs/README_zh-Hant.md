@@ -47,8 +47,7 @@ update_time  = 2025-12-31T11:45:14Z         # 最近修改時間 (UTC | yyyy-mm-
 
 [Master]
 CIDR =                  "172.20.159.0/28"   # 必填 / Required
-fallback_to_master =    false               # 選填 / Optional | 預設為 true / example true
-country.name =          "China"             # 選填 / Optional | 若未填寫則 fallback_to_master 強制為 false
+country.name =          "China"             # 選填 / Optional
 country.code =          "CN"                # 選填 / Optional
 source =                "DN42"              # 必填 / Required | 可為 DN42、NeoNetwork、ICVPN、ChaosVPN、CRXN 或其他與 DN42 互聯的網路
 
@@ -88,7 +87,6 @@ anycast =               true                 # 選填 / Optional
 | 欄位                   | 名稱             | 必要性 | 說明                                                                                            |
 | -------------------- | -------------- | --- | --------------------------------------------------------------------------------------------- |
 | `CIDR`               | 主網段            | 必填  | 為 `inetnum` 或 `inet6num` 裡的網段                                                                 |
-| `fallback_to_master` | 預設返回主網段的地理位置信息 | 選填  | 在未查詢到具體網段的地理位置信息時，預設返回主網段的地理位置信息，預設值為 `true`                                                  |
 | `country.name`       | 國家或地區的 ISO 名稱  | 選填  | DN42 registry 允許該項為空值，因此為選填。若未填寫該項，則 `country.code` 無需填寫，且 `fallback_to_master` 的值強制為 `false` |
 | `country.code`       | 國家或地區的 ISO 代碼  | 選填  | 如有填寫 `country.name`，則該項為必填                                                                    |
 | `source`             | 網段來源           | 必填  | 可填寫 `DN42`、`NeoNetwork`、`ICVPN`、`ChaosVPN`、`CRXN` 或其他與 DN42 互聯的網路                             |
