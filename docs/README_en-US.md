@@ -6,10 +6,6 @@
 
 ## **Description**
 
-**This is a preview branch for the new data structure. There will be a 7–14 day transition period, and the changes in this branch will be merged into the `main` branch no later than April 12, 2025.**
-
-[New Data Structure Example](../example.geoip-data.toml)
-
 [简体中文](../README.md)
 [繁体中文](./README_zh-Hant.md)
 
@@ -42,6 +38,8 @@ file_name = 172.20.159.0_28.toml
 ---
 
 ## **Example**
+
+[Data Structure Example](../example.geoip-data.toml)
 
 ```toml
 [Version]

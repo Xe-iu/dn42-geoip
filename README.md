@@ -6,11 +6,6 @@
 
 ## **说明**
 
-**新数据结构的预览分支。将有7-14days的过渡时间，最晚于 2025/04/12 该分支所修改的内容将合并到main分支。**
-**Preview branch for the new data structure. There will be a 7-14 day transition period, and the changes in this branch will be merged into the main branch by April 12, 2025 at the latest.**
-
-[新数据结构示例/New Data Structure Example](./example.geoip-data.toml)
-
 [English](./docs/README_en-US.md) 
 [繁體中文](./docs/README_zh-Hant.md) 
 
@@ -40,6 +35,8 @@ IPv6网段请到`data/ipv6`创建
 ------------
 
 ## **示例**
+
+[数据结构示例](./example.geoip-data.toml)
 
 ```toml
 [Version]
